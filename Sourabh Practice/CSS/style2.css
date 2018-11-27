@@ -1,0 +1,68 @@
+h1
+{
+    border:3px solid;
+    border-top-color: blue;
+    border-bottom-color: yellow;
+    border-left-color: brown;
+    border-right-color: tomato;
+    width:50%;
+}
+
+div#head
+{
+    border: 3px double;
+    position: absolute;
+    top: 30%;
+    right: 30%;
+}
+
+div.navbar
+{
+    width:100%;
+    background-color: black;
+    overflow: hidden;
+}
+
+div.navbar a
+{
+    float:left;
+    width:33%;
+    color:wheat;
+    font-size: 20px;
+}
+
+/*give properties to label tag only within div tag*/
+div#head label
+{
+    font-weight: bold;
+    font-size: 25px;
+    color: purple;
+}
+
+img.messi
+{
+    height: 200px;
+    width: 200px;
+    content : url("messi.jpg");
+}
+
+ol
+{
+    background-color: cornflowerblue;
+    font-weight: bold;
+    font-size: 15px;
+    border:1px dotted;
+}
+
+/*Setting properties to the nth child of the specified tag*/
+ol li:nth-child(2)
+{
+    font-size: 20px;
+    color:greenyellow;
+}
+
+ol li:nth-child(4)
+{
+    font-size: 20px;
+    color:darkturquoise;
+}

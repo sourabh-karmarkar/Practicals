@@ -1,0 +1,56 @@
+/*Import a css file which contains properites for H1*/
+@import "style2.css";
+
+/*Add the following property to the body tag if page width exceeds 1000px*/
+@media (min-width: 1000px)
+{
+    body
+    {
+        background-color:darksalmon;
+        width: 600px;
+        border: 2px solid;
+    }
+}
+
+/*Animation For rotating the paragraph tag*/
+@keyframes rotate1 /*Animation Name*/
+{
+    0%
+    {
+        transform: rotate(0deg);
+    }
+    100%
+    {
+        transform: rotate(360deg);
+    }
+}
+
+p
+{
+    color: blue;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 20px;
+    font-weight: bold;
+    transform-origin: center;
+    width:140px;
+    border:2px solid;
+}
+
+p:hover
+{
+    animation-name:rotate1;
+    animation-duration: 0.8s;
+    animation-timing-function: linear;
+    animation-iteration-count: 5;
+}
+
+h2
+{
+    background-color: aquamarine;
+    width:fit-content;
+}
+
+marquee h3{
+    background-color: yellowgreen;
+    width:fit-content;
+}

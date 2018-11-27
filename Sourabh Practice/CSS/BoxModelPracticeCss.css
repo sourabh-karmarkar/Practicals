@@ -1,0 +1,36 @@
+div#d1
+{
+    background-image: linear-gradient(to bottom,blue,yellow);
+    border:3px solid;
+    margin:0 auto; /*place the div to the center*/
+    width:50%;
+    height:50%;
+}
+
+div#d2
+{
+    width: 50%;
+    height:50%;
+    padding:5px;
+    border:3px solid;
+    margin:0 auto; /*place the div to the center*/
+    max-width: 900px;
+    min-width: 500px;
+    background-image: url("messi.jpg");
+    background-size: 40%;
+    background-repeat : no-repeat;
+    background-position: center;
+}
+
+div.wrapper
+{
+    height:fit-content;
+    width:fit-content;
+    background-color: aqua;
+    font-size: 25px;
+    display:flex;
+}
+
+div.wrap{
+    border:2px solid;
+}
