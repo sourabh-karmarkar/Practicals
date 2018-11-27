@@ -1,0 +1,43 @@
+Junit Categorization
+
+1) Junit platform
+2) Junit Jupiter
+3) Junit Vantage
+
+Junit 5 requires Java 8 or higher at runtime
+
+classes must be kept outside the project bundle.
+
+Steps to JUnit Sample Program
+
+1) Create a java project ---> 
+2) Create a package in source folder ---> com.tdd.learn
+3) Create interface in the package ---> FindFactor
+4) give method in the interface
+5) create a class in the same package and implement the interface
+6) go to project and make a new folder ---> testsrc
+7) right click on folder and ---> make as source folder
+8) right click on class ---> new JUnit test case ---> select the testsrc folder as source folder
+
+
+0 - Check for fail. Nothing is implemented. To check that all components required to test are linked/communicating.
+
+1. Expected <null> but was []
+   ...Make it green
+
+2. Expected <2> but was []
+   ...Make it green
+
+3. Expected <3> but was [2]
+   ...Make it green
+
+4. Expected <2,2> but was [4]
+   ...Make it green
+
+5. Expected <2,2,2> but was [2,4]
+   ...Make it green
+
+6. Expected <3,3> but was [9]
+   ...Make it green
+
+7. It should input GREEN for any input number greater than 1.

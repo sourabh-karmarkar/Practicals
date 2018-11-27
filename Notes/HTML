@@ -1,0 +1,65 @@
+Reference Link : https://developer.mozilla.org/en-US/docs/Web/HTTP
+
+Difference between COMPOSITION and AGGREGATION
+
+
+	HTML World
+	    |
+	    |
+	HTML PAGE
+	    |
+	    |
+	   tag
+	    |
+	    |
+	 Attribute
+	  |  |  |
+   Rendering | data
+	     |
+	  Behaviour
+
+PRACTICE
+
+<a>
+<audio>
+<body>
+<br>
+<button>
+<dialog>
+<footer>
+<form>
+<h1>
+<h2>
+<h3>
+<h4>
+<h5>
+<h6>
+<head>
+<header>
+<hr>
+<html>
+<img>
+<input>
+<li>
+<menu>
+<menuitem>
+<meta>
+<nav>
+<ol>
+<section>
+<select>
+<span>
+<ul>
+
+------------------------------------------------------------------------------
+
+ARIA - accesible rich internet application
+
+------------------------------------------------------------------------------
+
+HTTP Overview
+HTTP Request Methods (GET,PUT,POST)
+CORS - Cross Origin Resource Sharings
+HTTP Headers (Accept,Accept-Charset,Allow,Age,Content-Type,If-Modified-Since,Origin,Server-Timing,User-Agent)
+
+------------------------------------------------------------------------------

@@ -1,0 +1,28 @@
+1) git init
+git log
+git add "file name to be added" - add the file to the staging for commit
+git commit -m "Commit Message"
+git status
+git rm "filename"
+git branch - gives list of all the branches
+git branch "branch name" - create a new branch
+git checkout "branch name" - switch to the created branch
+
+merging ---> first go to source branch then commit changes
+		then come to master branch and (git merge "name of the source branch")
+
+git branch -d "branch_name to delete" --> delete a branch (cannot delete branch which you are currently working on)
+
+---------------------------------------------------------------------------
+
+git clone "github link" --> clone a project to your local machine
+git push origin "local branch name":"remote branch name"
+
+create pull request on github
+accept pull request and merge with master
+
+git pull ---> local machine
+
+---------------------------------------------------------------------------
+
+rebase
