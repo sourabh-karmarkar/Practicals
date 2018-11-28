@@ -1,0 +1,24 @@
+<!--Constants are block-scoped, much like variables defined using the let statement. The value of a constant cannot change through reassignment, and it can't be redeclared.-->
+<html>
+    <head>
+        <link rel="stylesheet" href="Design.css">
+    </head>
+    <body>
+        <div>
+            <script type="text/javascript">
+                //value cannot be chaned as it is a constant
+                const number=15;
+                try
+                {
+                    number=20;
+                }
+                catch(err)
+                {
+                    document.write(err);
+                    document.write("<br>")
+                }
+                document.write("value of number="+number);
+            </script>
+        </div>
+    </body>
+</html>

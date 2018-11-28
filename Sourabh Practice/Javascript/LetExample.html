@@ -1,0 +1,23 @@
+<html>
+    <head>
+        <link rel="stylesheet" href="Design.css">
+    </head>
+    <body>
+        <div>
+            <script type="text/javascript">
+                //The let statement declares a block scope local variable, optionally initializing it to a value.
+                let x=10;
+                if(x==10)
+                {
+                    let x=20;
+                    document.write("Value Of x inside block is : "+x);
+                }
+            </script><br>
+            <script>
+                document.write("Value Of x outside block is : "+x+" ");
+                document.write(typeof x);
+            </script>
+        </div>
+    </body>
+</html>
+

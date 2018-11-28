@@ -1,0 +1,8 @@
+div
+{
+    border: 3px double;
+    position: relative;
+    width:fit-content;
+    font-size: 25px;
+    background-color: blueviolet;
+}

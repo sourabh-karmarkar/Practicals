@@ -1,0 +1,52 @@
+<html>
+    <head>
+        <link rel="stylesheet" href="Design.css">
+    </head>
+    <body>
+        <div>
+            <script type="text/javascript">
+            //undefined variable beahviour
+            var input;
+            if(input==undefined)
+            {
+                input="variable is not defined";
+                document.write(input);
+            }
+            else
+            {
+                input="variable is defined";
+                document.write(input);
+            }
+            document.write("</div><br><br><div>");
+            //convert to zero when used in numerix context
+            var a;
+            document.write(a+2);
+            document.write("</div><br><br><div>");
+            //if value null then behaves as 0 in numeric context and false in boolean context
+                //numeric context
+                var nu=null;
+                document.write(nu*32+"------");
+                //boolean context
+                document.write(nu*false);
+                document.write("</div><br><br><div>");
+            //constant Objects
+            //properties of objects assigned to constants are not protected
+            const myobj={'key':'two'};
+            document.write(myobj.key+"<br>");
+            myobj.key='three';
+            document.write(myobj.key);
+            document.write("</div><br><br><div>");
+
+            //Data Type Conversion
+            var data1="Hello All";
+            var num=4;
+            var numdata=num+data1;
+            document.write("Type of num = "+typeof num+"<br>");
+            document.write("Type of data1 = "+ typeof data1 +"<br>");
+            document.write("Type of numdata = "+ typeof numdata +"<br>");
+            document.write("numdata = "+numdata+"<br>") // converts number to string
+            document.write("num converted to string = "+num.toString());
+      </script>
+        </div>
+    </body>
+</html>

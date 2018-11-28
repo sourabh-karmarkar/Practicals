@@ -1,0 +1,31 @@
+<html>
+    <head>
+        <script type="text/javascript" src="BasicPractice.js"></script>
+        <link rel="stylesheet" href="Design.css">
+    </head>
+    <body>
+        <div>
+            <script type="text/javascript">
+                document.write("SOURABH".toLowerCase());
+                greetMe("Sourabh");
+            </script>
+        </div><br>
+        <div>
+            <script type="text/javascript">
+                function variable()
+                {
+                    //Global Variable as var is not prefixed. Hence can be accessed anywhere
+                    y=5;
+                    var x=prompt("Give me input");
+                    if(x==1)
+                        document.write(x);
+                    else
+                        document.write(x+" is invalid!\n");
+                }
+                variable();
+                document.write("global variable y="+y);
+            </script>
+        </div>
+    </body>
+</html>
+

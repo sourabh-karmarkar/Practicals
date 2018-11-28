@@ -1,0 +1,39 @@
+<html>
+    <head>
+        <link rel="stylesheet" href="Design.css">
+    </head>
+    <body>
+        <div>
+            <form name="AnimalsForm">
+                <label>Select Any Animal</label>
+                <select id="Animals" name="Animals" multiple="multiple">
+                    <option selected="selected">Giraffe</option>
+                    <option>Lion</option>
+                    <option>Tiger</option>
+                    <option>Elephant</option>
+                    <option>Dog</option>
+                    <option>Donkey</option>
+                </select>
+                <input type="button" id="btn" value="How Many Selected?"/>
+            </form>
+            <script type="text/javascript">
+            //function to check how many options are selected and display the appropriate alert message
+                function howmany(selectAnimal)
+                {
+                    var numberselected=0;
+                    for(var i=0;i<Animals.options.length;i++)
+                    {
+                        if(Animals.options[i].selected)
+                            numberselected++;
+                    }
+                    return numberselected;
+                }
+
+                var btn=document.getElementById("btn");
+                btn.addEventListener('click',function(){
+                    alert("Number Of Options Selected : "+howmany(document.AnimalsForm.Animals));
+                });
+            </script>
+        </div>
+    </body>
+</html>

@@ -1,0 +1,36 @@
+<html>
+    <head>
+        <link rel="stylesheet" href="Design.css">
+    </head>
+    <body>
+        <div>
+            <script type="text/javascript">
+                //User defined exceptions
+
+                //Exception Created
+                function UserException(message)
+                {
+                    this.message=message;
+                    this.name="Exception By User";
+                }
+                UserException.prototype.toString=function()
+                {
+                    return this.name+': "' + this.message +'"';
+                }
+            
+                try
+                {
+                    var x=prompt("Enter Number");
+                    if(x>10)
+                        throw new UserException('Invalid Number');
+                    else
+                        throw 'Valid Number';
+                }
+                catch(e)
+                {
+                    document.write(e.toString());
+                }
+            </script>
+        </div>
+    </body>
+</html>
