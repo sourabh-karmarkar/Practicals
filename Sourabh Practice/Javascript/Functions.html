@@ -1,0 +1,85 @@
+<html>
+    <head>
+        <link rel="stylesheet" href="Design.css">
+    </head>
+    <body>
+        <div>
+            <script type="text/javascript">
+                //If you pass an object (i.e. a non-primitive value, such as Array 
+                //or a user-defined object) as a parameter and the function changes the
+                //object's properties, that change is visible outside the function
+                //primitive parameters are passed by value. Hence change is not reflected outside the function
+                function myfunc(arr)
+                {
+                    arr.make='Toyota';
+                    arr.make='Innova';
+                }
+
+                var car={make:'Honda',model:'Accord',year:'1998'};
+                var x,y;
+
+                x=car.make;
+                document.write("Original Value : "+x+"<br>");
+
+                myfunc(car);
+
+                y=car.make;
+                document.write("Changed Value : "+y+"<br>");
+                document.write("</div><br><br><div>");
+                //Anonymous Function
+                function map(f,a)
+                {
+                    var result=[];
+                    var i;
+                    for(i=0;i!=a.length;i++)
+                    {
+                        result[i]=f(a[i]);
+                    }
+                    return result;
+                }
+
+                //This is anonymous function
+                var r=function(x)
+                {
+                    return x*x;
+                }
+
+                var number=[1,2,3,4,5,6];
+                var square=map(r,number);
+                document.write("Squares Are : "+square);
+                document.write("</div><br><br><div>");
+
+                //Recursion
+                var a=function fact(n)
+                {
+                    if(n==0||n==1)
+                        return 1;
+                    else
+                    {
+                        return n*fact(n-1);
+                    }
+                }
+                document.write("Factorial By Recursion Is : "+a(parseInt(prompt("Enter Number")))+"<br>");
+                document.write("</div><br><br><div>");
+
+                //Nested Functions
+                function outside(x)
+                {
+                    function inside(y)
+                    {
+                        return x+y;
+                    }
+                    return inside;
+                }
+                //call the outside function
+                fn_inside=outside(4);
+                document.write(fn_inside+"<br>");
+                //call the inside function as value of x is preserved 
+                result=fn_inside(5);
+                document.write(result+"<br>");
+                result1=outside(3)(5);
+                document.write(result1+"<br>");
+            </script>
+        </div>
+    </body>
+</html>

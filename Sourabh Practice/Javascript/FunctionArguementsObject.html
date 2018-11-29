@@ -1,0 +1,26 @@
+<html>
+    <head>
+        <link rel="stylesheet" href="Design.css">
+    </head>
+    <body>
+        <div>
+            <script type="text/javascript">
+                function myconcat()
+                {
+                    var result="";
+                    var i;
+                    //iterate through arguements
+                    for(i=0;i<arguments.length;i++)
+                    {
+                        result+=arguments[i]+",";
+                    }
+                    return result;
+                }
+
+                document.write(myconcat(', ', 'red', 'orange', 'blue')+"<br>");
+                document.write(myconcat('sourabh','karmarkar','red', 'orange', 'blue')+"<br>");
+                document.write(myconcat('blue')+"<br>");
+            </script>
+        </div>
+    </body>
+</html>

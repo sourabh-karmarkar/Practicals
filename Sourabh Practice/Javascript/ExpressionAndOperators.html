@@ -1,0 +1,75 @@
+<html>
+    <head>
+        <link rel="stylesheet" href="Design.css">
+    </head>
+    <body>
+        <div>
+            <script type="text/javascript">
+                
+                var foo=['one','two','three'];
+
+                //Without Destructuring
+                var one=foo[0];
+                var two=foo[1];
+                var three=foo[2];
+                document.write("Without Destructuring : "+one+","+two+","+three);
+                document.write("</div><br><br><div>");
+                //With Destructuring
+                var [on,tw,thr]=foo;
+                document.write("With Destructuring : "+on+","+tw+","+thr);
+                document.write("</div><br><br><div>");
+                //Conditional Operator
+                var age=20;
+                var status=(age>=18)?"adult":"minor";
+                document.write("(Conditional Operator)Age Is : "+age+"<br>");
+                document.write("Status : "+status+"<br>");
+                document.write("</div><br><br><div>");
+                //Unary Delete
+                var Employee={fname:"Sourabh",lname:"Karmarkar",age:24};
+                document.write("First Name : "+Employee.fname+"<br>");
+                document.write("Last Name : "+Employee.lname+"<br>");
+                document.write("Age : "+Employee.age+"<br>");
+                document.write("</div><br><br><div>");
+
+                delete Employee.age;
+                document.write("First Name : "+Employee.fname+"<br>");
+                document.write("Last Name : "+Employee.lname+"<br>");
+                document.write("Age : "+Employee.age+"<br>");
+                document.write("</div><br><br><div>");
+                //type of operator
+                var func=new Function('5+1');
+                var shape='round';
+                var size=1;
+                var foo=['Apple','Mango','Papaya'];
+                var today=new Date();
+                document.write("Type Of func: "+typeof func+"<br>");
+                document.write("Type Of shape: "+typeof shape+"<br>");
+                document.write("Type Of size: "+typeof size+"<br>");
+                document.write("Type Of foo: "+typeof foo+"<br>");
+                document.write("Type Of today: "+typeof today+"<br>");
+                document.write("Type Of true: "+typeof true+"<br>");
+                document.write("Type Of null: "+typeof null+"<br>");
+                document.write("Type Of 62: "+typeof 62+"<br>");                
+                document.write("Type Of null: "+typeof 'HELLO WORLD'+"<br>");
+                document.write("</div><br><br><div>");
+
+                //in operator
+                var trees = ['redwood', 'bay', 'cedar', 'oak', 'maple'];
+                document.write(0 in trees);
+                document.write(3 in trees);
+                document.write(7 in trees);
+                document.write('bay' in trees);//(returns false (you must specify the index number, not the value at that index)
+                document.write('maple' in trees);
+                document.write('length' in trees);//Return True as length is an array property
+                document.write('PI' in Math);
+                document.write("</div><br><br><div>");
+                
+                //spread operator
+                var parts=['knees','shoulders','ears','eyes'];
+                document.write(parts+"<br>");
+                var parts2=['eyes','brain',...parts,'heart'];//use of spread operator
+                document.write(parts2+"<br>");
+            </script>
+        </div>
+    </body>
+</html>

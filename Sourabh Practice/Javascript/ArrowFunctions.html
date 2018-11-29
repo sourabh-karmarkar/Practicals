@@ -1,0 +1,18 @@
+<html>
+    <head>
+        <link rel="stylesheet" href="Design.css">
+    </head>
+    <body>
+        <div>
+            <script type="text/javascript">
+                var a=['Sourabh','Neha','Ruturaj','Seema'];
+                //without arrow function
+                var a2=a.map(function(s){return s.length});
+                document.write("Without Arrow Function "+a2+"<br>");
+                //with arrow function
+                var a3=a.map(s=>s.length);
+                document.write("Using Arrow Function "+a3);
+            </script>
+        </div>
+    </body>
+</html>

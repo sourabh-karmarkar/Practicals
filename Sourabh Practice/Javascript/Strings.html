@@ -1,0 +1,37 @@
+<html>
+    <head>
+        <link rel="stylesheet" href="Design.css">
+    </head>
+    <body>
+        <div>
+            <script type="text/javascript">
+                var str1=new String('This is Sourabh. Hello Sourabh All!!    ');
+                document.write(str1+"<br>");
+                
+                //String Methods
+                document.write("chartAt Function:"+str1.charAt(5)+"<br>");
+                document.write("indexOf Function:"+str1.indexOf('Sourabh')+"<br>");
+                document.write("lastIndexOf Function:"+str1.lastIndexOf('Sourabh')+"<br>");
+                document.write("includes Function:"+str1.includes('Sourabh')+"<br>");
+                document.write("substring Function:"+str1.substring(5,12)+"<br>");//start from index 5 end at index 12
+                document.write("substr Function:"+str1.substr(5,12)+"<br>");//start from 5 and 12 characters after that
+                document.write("toLowerCase Function:"+str1.toLowerCase()+"<br>");
+                document.write("trim Function:"+str1.trim()+"<br>");//remove whitespace at the begining and end of the string
+
+                var str3="ABC";
+                var str4="XYZ";
+                document.write("concat Function:"+str3.concat(str4)+"<br>");
+                var splitarr=str1.split(' ');//splits and converts to array with the given separator
+                document.write("split Function:"+splitarr+"<br>");
+                document.write("</div><br><br><div>");
+
+                //template literals
+                var a=5;
+                var b=15;
+                document.write("Answer is (without template literal) : "+(a+b)+"<br>");//without template literal i.e embedded expressions
+                document.write(`Answer is (with template literal) : ${a+b}`);//using template literal i.e embedded expressions
+
+            </script>
+        </div>
+    </body>
+</html>

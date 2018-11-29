@@ -1,0 +1,65 @@
+<html>
+    <head>
+        <link rel="stylesheet" href="Design.css">
+    </head>
+    <body>
+        <div>
+            <script type="text/javascript">
+                //Decimal Numbers
+                var x=12;
+                var t=088;//not treated as octal, parsed as decimal
+                var y=033123;//treated as octal as numbers after 0 are smaller than 8
+                document.writeln("Decimal : "+x+"<br>");
+                document.writeln("Decimal : "+t+"<br>");
+                document.writeln("Treated as Octal : "+y+"<br>");
+
+
+                //Binary Numbers
+                var w=0b111111101010100;//precede with 0
+                document.writeln("Binary : "+w+"<br>");
+                //Octal Numbers
+                var z=077;//precede with 0
+                document.writeln("Octal : "+z+"<br>");
+
+                //Hexadecimal Numbers
+                var a=0x77AFFFD;//precede with 0x
+                document.writeln("Hexadecimal : "+a+"<br>");
+                var a=0x77A;
+                document.writeln("Hexadecimal : "+a+"<br>");
+                document.write("</div><br><br><div>");
+
+                //Number Object
+                var biggestNum = Number.MAX_VALUE;
+                var smallestNum = Number.MIN_VALUE;
+                var infiniteNum = Number.POSITIVE_INFINITY;
+                var negInfiniteNum = Number.NEGATIVE_INFINITY;
+                var notANum = Number.NaN;
+                document.writeln("Number.MAX_VALUE : "+biggestNum+"<br>");
+                document.writeln("Number.MIN_VALUE : "+smallestNum+"<br>");
+                document.writeln("Number.POSITIVE_INFINITY : "+infiniteNum+"<br>");
+                document.writeln("Number.NEGATIVE_INFINITY; : "+negInfiniteNum+"<br>");
+                document.writeln("Number.Nan : "+notANum+"<br>");
+                document.write("</div><br><br><div>");
+
+                //Math Object
+                var xe=5;
+                document.writeln("Math.PI : "+Math.PI+"<br>");
+                document.writeln("Math.PI Sign : "+Math.sign(-Math.PI)+"<br>");
+                document.writeln("Sin(1) : "+Math.sin(1)+"<br>");
+                document.writeln("Sin(1) : "+Math.cos(1)+"<br>");
+                document.writeln("Math.random() : "+Math.random()+"<br>");//generates random number between 0 to 1
+                document.write("</div><br><br><div>");
+
+                //Date Object
+                var today=new Date();
+                document.writeln("Todays Date Is : "+today+"<br>");
+                document.write(today.getHours()+"hrs "+today.getMinutes()+"mins<br>");
+
+                //Define The Date
+                var christmas = new Date('December 25, 1995');
+                document.writeln("Month Is : "+christmas.getMonth()+"<br>");
+                document.writeln("Year Is : "+christmas.getFullYear()+"<br>");
+            </script>
+        </div>
+    </body>
+</html>
