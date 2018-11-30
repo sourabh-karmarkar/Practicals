@@ -1,0 +1,48 @@
+<!--Constants are block-scoped, much like variables defined using the let statement. The value of a constant cannot change through reassignment, and it can't be redeclared.-->
+<html>
+    <head>
+        <link rel="stylesheet" href="Design.css">
+    </head>
+    <body>
+        <div>
+            <script type="text/javascript">
+                var mySet=new Set();
+                mySet.add(1);
+                mySet.add('some text');
+                mySet.add('foo');
+                for(var val of mySet)
+                    document.write(val+",");
+                document.write("<br><br>");
+                mySet.delete(1);
+                for(var val of mySet)
+                    document.write(val+",");
+                document.write("<br>");
+                document.write(mySet.has('foo')+"<br>");
+                document.write(mySet.has('abc')+"<br>");
+
+                //Set Union
+                var set1=new Set([1,2,3,4]);
+                var set2=new Set([1,4,75,23]);
+
+                function union(set1,set2)
+                {
+                    var unionset=new Set(set1);
+                    for(var elem of set2)
+                        unionset.add(elem);
+                    return unionset;
+                }
+                var result=union(set1,set2);
+                document.write("Union Of 2 Sets is : ");
+                for(var elem of result)
+                    document.write(elem+",");
+                document.write("</div><br><br><div>");
+
+                //Remove duplicate elements from array
+                const numbers = [2,3,4,4,2,3,3,4,4,5,5,6,6,7,5,32,3,4,5];
+                document.write(numbers+"<br>");
+                document.write("After removing duplicates : "+[...new Set(numbers)]);
+
+            </script>
+        </div>
+    </body>
+</html>

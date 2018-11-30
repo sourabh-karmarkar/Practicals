@@ -1,0 +1,55 @@
+<html>
+    <head>
+        <link rel="stylesheet" href="Design.css">
+    </head>
+    <body>
+        <p id="test1"></p>
+        <p id="test2"></p>
+        <p id="test3"></p>
+        <div>
+            <script type="text/javascript">
+                var obj={"topic":"javascript","trainer":"rahul","BU":"Nurture"};
+                //looping over objects
+                let txt="";
+                for(x in obj)
+                    txt+=obj[x]+",";
+                document.write(txt+"<br>");
+
+                //Adding a property
+                obj.company="Synerzip";
+                for(x in obj)
+                    document.write(obj[x]+",");
+                
+                //General Practice
+                var person=
+                {
+                    firstname:"Sourabh",
+                    lastname:"Karmarkar",
+                    age:25,
+                    pets:["Jenny","Bolt","Maria"],
+                    fullname:function()
+                    {
+                        return this.firstname+" "+this.lastname;
+                    }
+                };
+                
+                document.getElementById("test1").innerHTML=person.fullname();
+                document.getElementById("test2").innerHTML=person.pets;
+                document.getElementById("test3").innerHTML=person.age;
+                
+                //Object.create(method)
+                var Animal={
+                    type:"mammal",
+                    displayType:function(){
+                        console.log(this.type);
+                    }
+                };
+
+                var fish=Object.create(Animal);
+                fish.type="Water Animals";
+                fish.displayType();
+
+            </script>
+        </div>
+    </body>
+</html>

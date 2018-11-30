@@ -1,0 +1,44 @@
+<!--Constants are block-scoped, much like variables defined using the let statement. The value of a constant cannot change through reassignment, and it can't be redeclared.-->
+<html>
+    <head>
+        <link rel="stylesheet" href="Design.css">
+    </head>
+    <body>
+        <div>
+            <script type="text/javascript">
+                //add key:value pairs in map and then print it
+                var map1=new Map();
+                for(var i=1;i<10;i++)
+                {
+                    map1.set(i,i*i);
+                }
+                for(var [key,value] of map1)
+                    document.write(key+" : "+value+"<br>");
+                
+                document.write("Length Of Map Is : "+map1.size+"<br><br>");
+                document.write("</div><br><br><div>");
+
+                //Display The Keys
+                for(var keys of map1.keys())
+                    document.write(keys+" , ");
+                document.write("</div><br><br><div>");
+
+                //Display Only the values
+                for(var value of map1.values())
+                    document.write(value+" , ");
+                document.write("</div><br><br><div>");
+
+                //Map.Entries()
+                for(var [key,value] of map1.entries())
+                    document.write(key+" : "+value+"<br>");
+                document.write("</div><br><br><div>");
+
+                //iterating by for each loop
+                map1.forEach(function(value,key){
+                    document.write(key +" square is "+ value+"<br>");
+                });
+
+            </script>
+        </div>
+    </body>
+</html>

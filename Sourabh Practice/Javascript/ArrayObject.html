@@ -1,0 +1,106 @@
+<html>
+
+<head>
+    <link rel="stylesheet" href="Design.css">
+</head>
+
+<body>
+    <div>
+        <script type="text/javascript">
+            var divs = document.getElementsByTagName('div');
+            /*
+            for (var i = 0, div; div = divs[i]; i++)
+            {
+                Process div in some way
+            }
+            This loop allows to process any DOM element and avoids the overhead of checking the length of the array
+            */
+            //Declaring Arrays
+            var arr = new Array(1, 2, 3, 4, 5, 'hello');
+            var arr1 = Array('Cat', 'Dog', 'Lion', "Monkey", "Tiger");
+            document.write(arr + "<br>");
+            document.write("Length : " + arr.length + "<br>");//Array Property
+            document.write(arr1 + "<br>");
+            document.write("Length : " + arr1.length + "<br>");//Array Property
+            document.write("</div><br><br><div>");
+
+            //looping array
+            arr.forEach(function (element) {
+                document.write(element + ",");
+            });
+            document.write("<br>");
+
+            //looping by arrow function
+            arr1.forEach(animal => document.write(animal + ","));
+            document.write("<br>");
+
+            //Add to Array
+            arr.push("Good");
+            document.write("Push : " + arr + "<br>");
+
+            //Remove From End Of Array
+            arr.pop();
+            document.write("Pop : " + arr + "<br>");
+
+            //Remove From Front Of Array
+            arr.shift();
+            document.write("Shift : " + arr + "<br>");
+
+            //Add To Front Of Array
+            arr.unshift("Mango");
+            document.write("Unshift : " + arr + "<br>");
+
+            //Concat Arrays
+            var arr2 = Array(32, 43, 65, 12, 67, 98);
+            var arrconcat = arr.concat(arr1, arr2);
+            document.write("Concat 2 Arrays : " + arrconcat + "<br>");
+
+            //Join Array elements with the specified deleimiter
+            var list = arr.join('#');
+            document.write("Join : " + list + "<br>");
+
+            //Remove array from index position
+            var temp=arr.splice(1,3);
+            document.write("Splice : " + temp + " removed<br>");
+
+            //Reverse the array
+            document.write("Reverse : " + arr.reverse() + "<br>");
+
+            //sort the array
+            document.write("Sort arr : " + arr.sort() + "<br>");
+            document.write("Sort arr2 : " + arr2.sort() + "<br>");
+
+            //indexof
+            document.write("Index Of : " + arr.indexOf('hello') + "<br>");
+
+            //map
+            var newar=['a','b','c'];
+            var mappedarr=newar.map(function(item){return item.toUpperCase()});
+            document.write("Map : " + mappedarr + "<br>");
+
+            //filter
+            var aa=['a',10,'b',20,'c',30];
+            var ab=aa.filter(function(item){return typeof ite;m,0 ==='number'});
+            document.write("Filter : " + ab + "<br>");
+
+            //reduce
+            var num=[1,2,3,4,5];
+            var total=num.reduce(function(first,second){return first+second},0);
+            document.write("Reduce : " + total + "<br>");
+            document.write("</div><br><br><div>");
+
+            //Multi Dimensional Arrays
+            var a=new Array(4);
+            for(i=0;i<a.length;i++)
+            {
+                a[i]=new Array(4);
+                for(j=0;j<a.length;j++)
+                    a[i][j]="{"+i+","+j+"}";
+            }
+
+            document.write("Multi Dimensional Array : " + a + "<br>");
+            
+        </script>
+    </div>
+</body>
+</html>
