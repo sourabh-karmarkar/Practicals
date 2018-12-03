@@ -1,0 +1,41 @@
+<html>
+<head>
+    <link rel="stylesheet" href="Design.css">
+</head>
+<body>
+    <div>
+        <script type="text/javascript">
+            var promise1=new Promise(function(resolve,reject){
+                resolve("Success");//Passing parameter to resolve()
+            });
+
+            promise1.then(function(value){
+                console.log(value);//expected output : "Success"
+            });
+
+            //then method returns a promise which allows for method chaining
+            Promise.resolve('abc').then(function(string){
+                    return new Promise(function(resolve,reject){
+                        setTimeout(function(){
+                            string+='Sourabh';
+                            console.log("1 : "+string);
+                            resolve(string);
+                        },1);
+                    });
+                }).then(function(string){
+                    setTimeout(function(){
+                        string+='karmarkar';
+                        console.log("2 : "+string);
+                    },1);//called at the last. As promise is asynchronous in nature the next statement is called and value of string goes to the next function in the chain.
+                    return string;
+                }).then(function(string){
+                    console.log("Last Then:  oops... didn't bother to instantiate and return " +
+                                "a promise in the prior then so the sequence may be a bit " +
+                                "surprising");
+                    console.log(string);
+                });
+
+        </script>
+    </div>
+</body>
+</html>

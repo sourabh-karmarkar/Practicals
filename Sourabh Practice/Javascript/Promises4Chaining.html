@@ -1,0 +1,44 @@
+<html>
+<head>
+    <link rel="stylesheet" href="Design.css">
+</head>
+<body>
+    <img id="myImage"/>
+    <script type="text/javascript">
+        //Chaining Promises
+
+        let func1=function(string1){
+            return new Promise(function(success,failure){
+                string1+=" Mahesh";
+                console.log(string1);
+                success(string1);
+            });
+        }
+        let func2=function(string2){
+            return new Promise(function(success,failure){
+                string2+=" Karmarkar";
+                console.log(string2);
+                success(string2);
+            });
+        }
+        let func3=function(string3){
+            return new Promise(function(success,failure){
+                string3+=" SYNERZIP";
+                console.log(string3);
+                success(string3);
+            });
+        }
+        
+        //Shortcut for chaining
+        //The functions(func1,func2,func3) are chained. 
+        //The string is passed through each function and something is added to it.
+        //At the end the whole modified string is printed.
+        let prom1=func1;
+        prom1("sourabh")
+        .then(message=>func2(message))
+        .then(message=>func3(message))
+        .then(message=>console.log(message));
+
+    </script>
+</body>
+</html>

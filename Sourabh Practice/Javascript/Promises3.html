@@ -1,0 +1,29 @@
+<html>
+<head>
+    <link rel="stylesheet" href="Design.css">
+</head>
+<body>
+    <img id="myImage"/>
+    <script type="text/javascript">
+        //creating a promise when the image is loaded.
+        let loadImageSource=function(imageId,imageSource){
+            return new Promise(function(imageLoadSuccess,imageLoadFailure){
+                let imageTagID=document.getElementById(imageId);
+                //asynchronous function. It is called when only the image is loaded.
+                imageTagID.onload=function(){
+                    imageLoadSuccess("Image Got Loaded");
+                }
+                imageTagID.src=imageSource;
+            });
+        }
+        console.log("this is before promise");
+        loadImageSource("myImage","https://www.google.com/images/branding/googlelogo/1x/googlelogo_color_272x92dp.png").then(
+            function(message){
+                console.log(message);
+            },function(){
+                console.log("Image Cannot Be Loaded");
+            });
+        console.log("this is after promise");
+    </script>
+</body>
+</html>

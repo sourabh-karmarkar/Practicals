@@ -1,0 +1,37 @@
+<html>
+
+<head>
+    <link rel="stylesheet" href="Design.css">
+</head>
+<body>
+    <div>
+        <img src="https://www.google.com/images/branding/googlelogo/1x/googlelogo_color_272x92dp.png"/>
+        <script type="text/javascript">
+            let a;
+            //Promise Created
+            let promise1=function(){
+                return new Promise(function(resolve,reject){
+                    a=prompt("Enter Any Number : ");
+                    if(a>20)
+                        resolve();
+                    else
+                        reject();
+                });
+            }
+
+            console.log("This is before promise!");//order : 1
+            promise1().then(
+                function(){
+                    console.log("Promise is resolved. a is "+a);//order : 3 (As promise is asynchronous)
+                    alert("Promise is resolved. a is "+a);
+                },
+                function(){
+                    console.log("Promise is rejected. a is "+a);//order : 3 (As promise is asynchronous)
+                    alert("Promise is rejected. a is "+a);
+                }
+            );
+            console.log("This is after promise!");//order : 2
+        </script>
+    </div>
+</body>
+</html>
