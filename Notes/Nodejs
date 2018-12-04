@@ -8,3 +8,37 @@ How to install latest node.js in ubuntu
 
 ---------------------------------------------------------------------------------------------
 
+npm installed at
+
+/usr/lib/node_modules/npm
+
+we can add modules in the npm for our use
+
+---------------------------------------------------------------------------------------------
+
+Some important links : 
+
+https://nodejs.org/en/docs/
+https://www.w3schools.com/nodejs/default.asp
+https://www.w3schools.com/nodejs/nodejs_intro.asp
+https://www.w3schools.com/nodejs/nodejs_get_started.asp
+https://www.w3schools.com/nodejs/nodejs_modules.asp
+https://www.w3schools.com/nodejs/nodejs_http.asp
+https://www.w3schools.com/nodejs/nodejs_filesystem.asp
+https://www.w3schools.com/nodejs/nodejs_url.asp
+https://www.w3schools.com/nodejs/nodejs_npm.asp
+https://www.w3schools.com/nodejs/nodejs_events.asp
+https://www.w3schools.com/nodejs/nodejs_uploadfiles.asp
+https://www.w3schools.com/nodejs/nodejs_email.asp
+https://www.w3schools.com/nodejs/ref_modules.asp
+
+https://www.w3schools.com/nodejs/ref_events.asp
+https://www.w3schools.com/nodejs/ref_fs.asp
+https://www.w3schools.com/nodejs/ref_http.asp
+https://www.w3schools.com/nodejs/ref_https.asp
+https://www.w3schools.com/nodejs/ref_path.asp
+https://www.w3schools.com/nodejs/ref_querystring.asp
+https://www.w3schools.com/nodejs/ref_readline.asp
+https://www.w3schools.com/nodejs/ref_stream.asp
+https://www.w3schools.com/nodejs/ref_timers.asp
+https://www.w3schools.com/nodejs/ref_url.asp
