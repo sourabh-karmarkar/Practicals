@@ -16,6 +16,20 @@ we can add modules in the npm for our use
 
 ---------------------------------------------------------------------------------------------
 
+FOR YOUR UNDERSTANDING
+
+1) Create a folder and go in the folder
+2) type ---> npm init
+3) package.json is installed
+4) then install nodemailer ---> node install nodemailer
+5) node_modules folder is created which has nodemailer folder
+6) package.json recieves an entry about the newly installed package
+7) if the node_modules is deleted but the package.json has an entry then simple type ---> node install
+8) it will install the specific modules mentioned in the package.json file.
+9) you can also check the folders and code in the nodemailer folder.
+ 
+---------------------------------------------------------------------------------------------
+
 Some important links : 
 
 https://nodejs.org/en/docs/
@@ -42,3 +56,5 @@ https://www.w3schools.com/nodejs/ref_readline.asp
 https://www.w3schools.com/nodejs/ref_stream.asp
 https://www.w3schools.com/nodejs/ref_timers.asp
 https://www.w3schools.com/nodejs/ref_url.asp
+
+---------------------------------------------------------------------------------------------

@@ -1,0 +1,11 @@
+https://jestjs.io/
+
+To install jest
+
+1) install by entering the command
+
+	npm install --save-dev jest
+
+2) run the test case
+
+	npm test

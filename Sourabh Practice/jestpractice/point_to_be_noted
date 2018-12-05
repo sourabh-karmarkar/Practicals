@@ -1,0 +1,3 @@
+the node_modules which has the files of jest are not commited here. However the package.json file
+has the entry. Hence download this folder and simply type ---> npm install ---> it will automatically install
+the dependencies which have an entry in the package.json
