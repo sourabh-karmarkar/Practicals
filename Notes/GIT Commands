@@ -15,6 +15,12 @@ git branch -d "branch_name to delete" --> delete a branch (cannot delete branch 
 
 ---------------------------------------------------------------------------
 
+Store git username and password so that no need to install every time you push
+
+---> git config --global user.name "Git Username"
+
+---------------------------------------------------------------------------
+
 git clone "github link" --> clone a project to your local machine
 git push origin "local branch name":"remote branch name"
 
