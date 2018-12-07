@@ -1,0 +1,11 @@
+--------------------------------------------------------------------------------------------
+
+To access a MySQL database with Node.js, you need a MySQL driver. To install the driver, open the terminal and type
+
+---> npm install mysql
+
+--------------------------------------------------------------------------------------------
+
+1) Table Creation
+
+create table EMPLOYEE (e_id int primary key auto_increment, designation text, email text NOT NULL, phone BIGINT NOT NULL);

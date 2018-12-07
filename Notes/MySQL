@@ -1,0 +1,38 @@
+------------------------------------------------------------------------------------------------
+
+https://dev.mysql.com/doc/
+https://www.tutorialspoint.com/mysql/index.htm
+
+------------------------------------------------------------------------------------------------
+
+1) logging to a file
+
+in the mysql prompt
+
+---> tee path/file_name;
+
+to stop the logging
+
+---> notee
+
+------------------------------------------------------------------------------------------------
+
+2) check the MySQL server status
+
+---> /etc/init.d/mysql status
+
+------------------------------------------------------------------------------------------------
+
+3) command to change mysql root password
+
+---> ALTER USER 'root'@'localhost' IDENTIFIED WITH 'mysql_native_password' BY 'your password';
+
+------------------------------------------------------------------------------------------------
+
+4) using a text file to execute MySQL commands.
+
+go in the mysql command line and type the following
+
+---> source file_path/file_name;
+
+------------------------------------------------------------------------------------------------
