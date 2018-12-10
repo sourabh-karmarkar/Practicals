@@ -13,6 +13,7 @@ var sql1="select * from EMPLOYEE where email like ?";
 var sql2="select * from EMPLOYEE order by email";
 con.connect(function(err){
     if(err) throw err;
+    console.log('Connected As id : '+con.threadId);
     con.query(sql,function(err,result){
         if(err) throw err;
         console.log(result);
