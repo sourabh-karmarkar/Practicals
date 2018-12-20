@@ -1,0 +1,34 @@
+----------------------------------------------------------------------------------
+
+MongoDB
+https://www.mongodb.com/
+
+----------------------------------------------------------------------------------
+
+--->Install MongoDB on Ubuntu
+
+https://docs.mongodb.com/manual/tutorial/install-mongodb-on-ubuntu/
+
+----------------------------------------------------------------------------------
+
+document based storage
+	|
+	|
+      JSON
+	|
+	|
+      NOSQL
+      |   |
+      |   |
+MongoDB   CouchDB(by Apache) ----> all these are implementation of NoSQL
+
+1) introduction
+2) installation
+3) mongo shell
+4) mongo DB CRUD operations
+	insert
+	read
+	update
+	delete
+5) Aggregation
+6) Data Models
