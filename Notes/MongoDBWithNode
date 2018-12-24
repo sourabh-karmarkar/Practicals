@@ -1,0 +1,34 @@
+------------------------------------------------------------------------------------------------
+
+MongoDB with Node
+
+------------------------------------------------------------------------------------------------
+
+Some important links
+
+https://www.w3schools.com/nodejs/nodejs_mongodb.asp
+https://www.w3schools.com/nodejs/nodejs_mongodb_create_db.asp
+https://www.w3schools.com/nodejs/nodejs_mongodb_createcollection.asp
+https://www.w3schools.com/nodejs/nodejs_mongodb_insert.asp
+https://www.w3schools.com/nodejs/nodejs_mongodb_find.asp
+https://www.w3schools.com/nodejs/nodejs_mongodb_query.asp
+https://www.w3schools.com/nodejs/nodejs_mongodb_sort.asp
+https://www.w3schools.com/nodejs/nodejs_mongodb_delete.asp
+https://www.w3schools.com/nodejs/nodejs_mongodb_drop.asp
+https://www.w3schools.com/nodejs/nodejs_mongodb_update.asp
+https://www.w3schools.com/nodejs/nodejs_mongodb_limit.asp
+https://www.w3schools.com/nodejs/nodejs_mongodb_join.asp
+
+https://www.npmjs.com/package/mongodb
+http://mongodb.github.io/node-mongodb-native/
+http://mongodb.github.io/node-mongodb-native/3.1/
+http://mongodb.github.io/node-mongodb-native/3.1/api/
+
+------------------------------------------------------------------------------------------------
+
+Download and install mongodb package:
+
+---> npm install mongodb
+
+------------------------------------------------------------------------------------------------
+    
