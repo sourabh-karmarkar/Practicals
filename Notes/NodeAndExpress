@@ -1,0 +1,68 @@
+----------------------------------------------------------------------------------------------------
+
+					Express JS (Node)
+
+----------------------------------------------------------------------------------------------------
+
+Express.js is to Node.js what Ruby on Rails or Sinatra is to Ruby.
+Express 3.x is a light-weight web application framework to help organize your web application into an MVC architecture on the server side. You can use a variety of choices for your templating language (like EJS, Jade, and Dust.js).
+You can then use a database like MongoDB with Mongoose (for modeling) to provide a backend for your Node.js application. Express.js basically helps you manage everything, from routes, to handling requests and views.
+
+----------------------------------------------------------------------------------------------------
+
+Some important links
+
+http://expressjs.com/en/starter/installing.html
+http://expressjs.com/en/starter/hello-world.html
+http://expressjs.com/en/starter/generator.html
+http://expressjs.com/en/starter/basic-routing.html
+http://expressjs.com/en/guide/routing.html
+http://expressjs.com/en/starter/static-files.html
+https://expressjs.com/en/guide/writing-middleware.html
+https://expressjs.com/en/guide/using-middleware.html
+
+----------------------------------------------------------------------------------------------------
+
+FrameWork - can be described as a semi-complete application
+
+----------------------------------------------------------------------------------------------------
+
+First initialize npm ---> npm init
+
+Installing Express
+http://expressjs.com/en/starter/installing.html
+
+--->npm install express --save
+
+----------------------------------------------------------------------------------------------------
+
+Installing Express Generator :
+http://expressjs.com/en/starter/generator.html
+
+---> npm install express-generator -g
+
+Creating an App
+
+---> express --view=pug myapp
+
+Running The App In Linux
+
+---> DEBUG=myapp:* npm start
+
+----------------------------------------------------------------------------------------------------
+
+https://expressjs.com/
+
+Getting Started
+1) Installing
+2) Hello World
+3) Express Generator
+4) Basic Routing
+5) Static Files
+
+Guide
+1) Routing
+2) Writing Middleware
+3) Using Middleware
+
+----------------------------------------------------------------------------------------------------
