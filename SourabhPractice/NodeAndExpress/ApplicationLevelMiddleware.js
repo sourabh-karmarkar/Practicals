@@ -11,6 +11,7 @@ app.use(function(req,res,next){
 //middleware function mounted on /user/:id path
 app.use('/user/:id',function(req,res,next){
     console.log('Request URL : ',req.originalUrl);
+    console.log(req.params.id);
     next();
 },function(req,res,next){
     console.log('Request Type : ',req.method);

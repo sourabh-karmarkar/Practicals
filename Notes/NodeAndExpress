@@ -5,7 +5,7 @@
 ----------------------------------------------------------------------------------------------------
 
 Express.js is to Node.js what Ruby on Rails or Sinatra is to Ruby.
-Express 3.x is a light-weight web application framework to help organize your web application into an MVC architecture on the server side. You can use a variety of choices for your templating language (like EJS, Jade, and Dust.js).
+Express is a light-weight web application framework to help organize your web application into an MVC architecture on the server side. You can use a variety of choices for your templating language (like EJS, Jade, and Dust.js).
 You can then use a database like MongoDB with Mongoose (for modeling) to provide a backend for your Node.js application. Express.js basically helps you manage everything, from routes, to handling requests and views.
 
 ----------------------------------------------------------------------------------------------------
@@ -64,5 +64,33 @@ Guide
 1) Routing
 2) Writing Middleware
 3) Using Middleware
+
+----------------------------------------------------------------------------------------------------
+
+nodemon - you do not have to restart the server every time you make changes in the node application
+
+---> npm install nodemon -g
+-g is for installing globally
+
+----------------------------------------------------------------------------------------------------
+
+Validation for forms
+
+1) you can do it manually
+2) bunch of modules that you can use (express-validator)
+
+https://github.com/express-validator/express-validator
+
+---> npm install express-valdator --save
+
+----------------------------------------------------------------------------------------------------
+
+Using MongoDB with Express JS
+
+use a simple library ---> mongojs
+
+https://github.com/mafintosh/mongojs
+
+---> npm install mongojs --save
 
 ----------------------------------------------------------------------------------------------------
