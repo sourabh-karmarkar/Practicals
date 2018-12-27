@@ -19,6 +19,6 @@ describe("Prime Factors Test Cases",()=>{
         expect(primeFactorObject.primeFactorFunction(9)).toEqual([3,3]);
     });
     test("Input : 1269 ---> Output : 3,3,3,47",()=>{
-        expect(primeFactorObject.primeFactorFunction(9)).toEqual([3,3,3,47]);
+        expect(primeFactorObject.primeFactorFunction(1269)).toEqual([3,3,3,47]);
     });
 });

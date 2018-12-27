@@ -1,0 +1,14 @@
+{
+  "name": "27dec2018",
+  "version": "1.0.0",
+  "description": "",
+  "main": "PrimeFactor.js",
+  "scripts": {
+    "test": "jest"
+  },
+  "author": "Sourabh Karmarkar",
+  "license": "ISC",
+  "devDependencies": {
+    "jest": "^23.6.0"
+  }
+}
