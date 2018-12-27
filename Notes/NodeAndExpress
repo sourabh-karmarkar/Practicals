@@ -20,10 +20,12 @@ http://expressjs.com/en/guide/routing.html
 http://expressjs.com/en/starter/static-files.html
 https://expressjs.com/en/guide/writing-middleware.html
 https://expressjs.com/en/guide/using-middleware.html
-
-----------------------------------------------------------------------------------------------------
-
-FrameWork - can be described as a semi-complete application
+https://expressjs.com/en/guide/using-template-engines.html
+https://expressjs.com/en/guide/error-handling.html
+https://expressjs.com/en/guide/debugging.html
+https://expressjs.com/en/guide/database-integration.html
+https://expressjs.com/en/advanced/developing-template-engines.html
+https://expressjs.com/en/advanced/pm.html
 
 ----------------------------------------------------------------------------------------------------
 
@@ -64,6 +66,14 @@ Guide
 1) Routing
 2) Writing Middleware
 3) Using Middleware
+4) Using Template Engines
+5) Error Handling
+6) Debugging
+7) Database Integration
+
+Advanced Topics
+1) Template Engines
+2) Process Managers
 
 ----------------------------------------------------------------------------------------------------
 

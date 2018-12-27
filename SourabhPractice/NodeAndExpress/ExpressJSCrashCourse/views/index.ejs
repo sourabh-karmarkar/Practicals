@@ -23,12 +23,12 @@
     </form>
     <h1><%= title %></h1>
     <ul>
-    <% if(!errors){ users.forEach(function(user){ %>
+    <% users.forEach(function(user){ %>
         <li>
             <%=user.first_name %>
             <%=user.last_name %>
             <a class="deleteUser" data-id="<%= user._id %>" href="#">Delete</a>
         </li>
-    <% }) } %>
+    <% }) %>
     </ul>
 <% include partials/footer %>

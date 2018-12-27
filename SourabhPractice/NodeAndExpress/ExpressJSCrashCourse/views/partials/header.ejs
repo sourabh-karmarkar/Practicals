@@ -2,6 +2,28 @@
     <head>
         <title>My Express App</title>
         <script src="https://code.jquery.com/jquery-1.12.4.js" integrity="sha256-Qw82+bXyGq6MydymqBxNPYTaUXXq7c8v3CwiYwLLNXU=" crossorigin="anonymous"></script>
-        <script src="js/main.js"></script>
+        <script>
+            $(document).ready(function(){
+                $('.deleteUser').on('click',deleteUser);
+            });
+
+            function deleteUser(){
+                var confirmation=confirm('Are You Sure?');
+                if(confirmation)
+                {
+                    $.ajax({
+                        type:'DELETE',
+                        url:'/users/delete/'+$(this).data('id')
+                    }).done(function(){
+                        window.location.replace('/');
+                    });
+                    window.location.replace('/');
+                }
+                else
+                {
+                    return false;
+                }
+            }
+        </script>
     </head>
     <body>

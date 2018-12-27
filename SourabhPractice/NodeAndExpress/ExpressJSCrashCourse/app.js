@@ -26,9 +26,6 @@ app.set('views',path.join(__dirname,'views'));
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({extended:false}));
 
-//Set Satic Path
-app.use(express.static(path.join(__dirname,'public')));
-
 //Global Vars
 app.use(function(req,res,next){
     res.locals.errors=null;
@@ -71,10 +68,13 @@ app.post('/users/add',(req,res)=>{
 
     if(errors)
     {
-        res.render('index',{
-            title:"Customers",
-            users:users,
-            errors:errors
+        db.users.find(function(err,docs){
+            console.log(errors);
+            res.render('index',{
+                title:"Customers",
+                users:docs,
+                errors:errors
+            });
         });
     }
     else{
