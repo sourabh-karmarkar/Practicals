@@ -1,0 +1,15 @@
+{
+  "name": "bookstoreapplication",
+  "version": "1.0.0",
+  "description": "Simple Bookstore Application",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "dependencies": {
+    "express": "*",
+    "mongoose": "*"
+  },
+  "author": "Sourabh Karmarkar",
+  "license": "ISC"
+}
