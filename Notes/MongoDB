@@ -61,3 +61,9 @@ Commands To Check Status Of MongoDB Database
 --> nc -v localhost 27017: Prints whether connection to mongodb running on port 27017 is succeeded.
 
 --------------------------------------------------------------------------------------------------------------------------------------------
+
+Importing a json file to mongo database
+
+---> mongoimport --db QuizExpressDB --collection Users --file Users.json
+
+--------------------------------------------------------------------------------------------------------------------------------------------
