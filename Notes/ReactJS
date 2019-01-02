@@ -1,0 +1,75 @@
+--------------------------------------------------------------------------------------------------------------------------
+
+							React JS
+
+--------------------------------------------------------------------------------------------------------------------------
+
+Links to be referred :-
+
+https://reactjs.org/
+
+https://www.taniarascia.com/getting-started-with-react/
+
+--------------------------------------------------------------------------------------------------------------------------
+
+Principles
+
+1) View is a function of model i.e View=f(Model)
+2) One Way Data Flow
+
+--------------------------------------------------------------------------------------------------------------------------
+
+Installing a React App
+
+---> npm install create-react-app -g
+
+--------------------------------------------------------------------------------------------------------------------------
+
+						Creating a React App
+
+---> npx create-react-app [React App Name]
+
+Then go into the newly created React App folder and start the project
+
+---> npm start
+
+/public ---> All the static files are kept like html,css,javascript etc...
+/src ---> All the react code will be kept here
+
+--------------------------------------------------------------------------------------------------------------------------
+
+Adding React Developer Tools
+
+https://chrome.google.com/webstore/detail/react-developer-tools/fmkadmapgofadopljbjfkapdkoienihi/related
+
+--------------------------------------------------------------------------------------------------------------------------
+
+JSX
+
+JSX = JavaScript + XML
+stands for javascript XML
+
+- With JSX, we can write what looks like HTML, and also we can create and use our own XML-like tags.
+- Using JSX is not mandatory for writing React. Under the hood, it’s running createElement, which takes the tag, object containing the properties, and children of the component and renders the same information.
+- Properties and methods in JSX are camel case.
+- Self-closing tags must end in a slash – e.g. <img />
+
+--------------------------------------------------------------------------------------------------------------------------
+
+Class Component And Simple Component Comparision
+
+---> Simple Component
+
+const SimpleComponent = () => { 
+    return <div>Example</div>;
+}
+
+---> Class Component
+
+class ClassComponent extends Component {
+    render() {
+        return <div>Example</div>;
+    }
+}
+
+--------------------------------------------------------------------------------------------------------------------------
