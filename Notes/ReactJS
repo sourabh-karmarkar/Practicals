@@ -6,9 +6,46 @@
 
 Links to be referred :-
 
-https://reactjs.org/
+---> https://reactjs.org/
 
-https://www.taniarascia.com/getting-started-with-react/
+https://reactjs.org/docs/getting-started.html
+
+--------------------------------------------------------------------------------------------------------------------------
+
+Main Concepts
+
+https://reactjs.org/docs/hello-world.html
+https://reactjs.org/docs/introducing-jsx.html
+https://reactjs.org/docs/rendering-elements.html
+https://reactjs.org/docs/components-and-props.html
+https://reactjs.org/docs/state-and-lifecycle.html
+https://reactjs.org/docs/handling-events.html
+https://reactjs.org/docs/conditional-rendering.html
+https://reactjs.org/docs/lists-and-keys.html
+https://reactjs.org/docs/forms.html
+
+(validation, keeping track of the visited fields, and handling form submission)--> https://jaredpalmer.com/formik
+
+https://reactjs.org/docs/lifting-state-up.html
+https://reactjs.org/docs/composition-vs-inheritance.html
+https://reactjs.org/docs/thinking-in-react.html
+
+--------------------------------------------------------------------------------------------------------------------------
+
+https://reactjs.org/docs/fragments.html
+https://reactjs.org/docs/higher-order-components.html
+https://reactjs.org/docs/integrating-with-other-libraries.html
+https://reactjs.org/docs/jsx-in-depth.html
+https://reactjs.org/docs/react-without-jsx.html
+https://reactjs.org/docs/reconciliation.html
+https://reactjs.org/docs/refs-and-the-dom.html
+https://reactjs.org/docs/render-props.html
+https://reactjs.org/docs/typechecking-with-proptypes.html
+https://reactjs.org/docs/uncontrolled-components.html
+
+Creating a basic project
+
+---> https://www.taniarascia.com/getting-started-with-react/
 
 --------------------------------------------------------------------------------------------------------------------------
 
