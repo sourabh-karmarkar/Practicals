@@ -1,0 +1,133 @@
+-------------------------------------------------------------------------------------------------------------------------------
+
+					CREATING CUSTOM TERMINAL COMMAND (GIT)
+
+-------------------------------------------------------------------------------------------------------------------------------
+
+https://medium.com/devnetwork/how-to-create-your-own-custom-terminal-commands-c5008782a78e
+
+-------------------------------------------------------------------------------------------------------------------------------
+
+---> Step 1: Know the basic structure for writing a function in Shell
+
+Here is a sample:
+
+-------------------------------------------------------------------------------------------------------------------------------
+
+function print_my_input()
+{
+	echo 'Your input: ' $1
+}
+
+-------------------------------------------------------------------------------------------------------------------------------
+
+If you send some input to the function, the first parameter gets stored in $1 variable, the second parameter in $2 and so on.
+
+Copy and paste the above function in your terminal and try calling the function like this:
+
+---> print_my_input 'Just trying out my new command'
+
+The output should be:
+
+Your input: Just trying out my new command
+
+-------------------------------------------------------------------------------------------------------------------------------
+
+Step 2: Making a place to keep all of your custom commands
+
+2.1 - We will be creating a new bash script file where we will keep all of our commands.
+We will make it a hidden file by appending a dot(.) in front of the filename as it will be only used by the terminal and it also prevents accidental deletion.
+
+Let’s go to the home directory (~) in our terminal. cd ~ will take you there. Now, create a new bash script by using the following command:
+touch .my_custom_commands.sh
+
+Now open the above file in any text editor and paste the following code and save it.
+
+-------------------------------------------------------------------------------------------------------------------------------
+
+#!/bin/bash
+# prints the input
+function print_my_input()
+{
+	echo 'Your input: ' $1
+}
+
+-------------------------------------------------------------------------------------------------------------------------------
+
+The first line is a convention used while writing Shell scripts which gives information to the Shell for using the appropriate interpreter. e.g.#!/usr/bin/env python
+# is used for writing comments
+
+2.2 - Setting up file permissions
+By default, a newly created file has only read permission. Since we only need to load our file into the Shell, read permission will be enough for us which is already there. So, we don’t need to alter permission of our file during this session.
+
+But just for the knowledge, you can try executing the script using command in this format ./{{script_name}} i.e. ./.my_custom_command.sh in our case. You will see “permission denied” message.
+
+However, if there was need to run the script explicitly through terminal like above, we would set “executable” permission to the file using the following command:
+
+---> chmod +x .my_custom_commands.sh
+
+2.3 - Make the command available in the Terminal
+Remember, we had pasted our function print_my_input in the terminal and tried to run it? This will make the command(which is just a function/method actually) available to the current terminal session for that particular tab only. If you try opening new tab and execute the command, it won’t be there.
+
+Let’s look into how we can load our command in any terminal session. 
+Our file is already there, saved and ready. 
+Let’s start from fresh.
+
+Quit the terminal and start a new one and go the home directory.
+Check if this print_my_input commands works or not. It should not work now.
+Now, load the file content using source command like this:
+
+---> source ~/.my_custom_commands.sh
+
+Now try typing print_my_input command and hit enter.
+It work right? Now, we have to tell terminal to load the content of our script in each terminal session. We do that by adding the command for loading the script in a rc (Run Control) file of the Shell. The shell loads/executes all the commands inside the run control file during each interactive shell launch.
+Bash is the default shell for almost all UNIX based systems. However, different flavours like ZSH are also there. Based on the shell we are using, we will modify either ~/.bashrc or ~/.zshrc file. If you don’t have idea about this, just go for the ~/.bashrc file. Note that i am using full path while describing these files.
+
+Adding our command to the rc files:
+
+Open ~/.bashrc or ~/.zshrc using any text editor you have
+Add the following command after the last line or anywhere you want
+
+---> source ~/.my_custom_commands.sh
+
+Save file after adding the new line and exit the terminal
+Since, we have already told terminal to load our file on each terminal session, try this command print_my_input in the current tab and also by opening a new tab. It should be working everywhere even when we exit and start a new terminal.
+
+-------------------------------------------------------------------------------------------------------------------------------
+
+							MY CUSTOM GIT COMMAND
+
+-------------------------------------------------------------------------------------------------------------------------------
+
+NOTE : Please set the origin to your specified GIT url and also set the password in the .config file so that it will not ask for password everytime.
+
+1) create a file in the home directory.
+
+2) Copy and Paste the following code into the newly created file.
+
+-------------------------------------------------------------------
+
+#!/bin/bash
+# prints the input
+function GIT_SOURABH()
+{
+	git add .
+	echo -n "Hi Sourabh, Please Enter Commit Message : "
+	read commit_message
+	git commit -m "$commit_message"
+	git push origin master
+}
+
+-------------------------------------------------------------------
+
+3) Then make the file executable by the following command
+
+---> chmod +x .[your file name].sh
+
+4) Then make the following entry in the .bashrc file which is present in the home directory
+
+---> source ~/.[your file name].sh
+
+5) Your custom command is ready now. Just type the function name in the terminal and your custom command will get executed.
+
+-------------------------------------------------------------------------------------------------------------------------------
