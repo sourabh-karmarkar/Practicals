@@ -1,0 +1,40 @@
+-------------------------------------------------------------------------------------------------------------------------------------
+
+								REDUX
+
+-------------------------------------------------------------------------------------------------------------------------------------
+
+https://redux.js.org/
+
+-------------------------------------------------------------------------------------------------------------------------------------
+
+---> Getting Started
+
+https://redux.js.org/introduction/getting-started
+https://redux.js.org/introduction/installation
+https://redux.js.org/introduction/motivation
+https://redux.js.org/introduction/core-concepts
+https://redux.js.org/introduction/three-principles
+https://redux.js.org/introduction/learning-resources
+https://redux.js.org/introduction/examples
+
+---> Basic Tutorial
+
+https://redux.js.org/basics/basic-tutorial
+https://redux.js.org/basics/actions
+
+-------------------------------------------------------------------------------------------------------------------------------------
+
+Installing Redux
+
+---> npm install --save redux
+
+-------------------------------------------------------------------------------------------------------------------------------------
+
+Three Principles of Redux
+
+1) Single source of truth
+2) State is read-only
+3) Changes are made with pure functions
+
+-------------------------------------------------------------------------------------------------------------------------------------
