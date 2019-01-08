@@ -28,6 +28,32 @@ https://redux.js.org/basics/data-flow
 https://redux.js.org/basics/usage-with-react
 https://redux.js.org/basics/example
 
+---> Advanced Tutorial
+
+https://redux.js.org/advanced/advanced-tutorial
+https://redux.js.org/advanced/async-actions
+https://redux.js.org/advanced/async-flow
+https://redux.js.org/advanced/middleware
+https://redux.js.org/advanced/usage-with-react-router
+https://redux.js.org/advanced/example-reddit-api
+https://redux.js.org/advanced/next-steps
+
+-------------------------------------------------------------------------------------------------------------------------------------
+
+---> Tutorial Videos
+
+1) Boris Dinkevich: Practical Advanced Redux
+
+https://www.youtube.com/watch?v=Gjiu7Lgdg3s
+
+2) Redux Crash Course With React
+
+https://www.youtube.com/watch?v=93p3LxR9xfM
+
+3) Complete React Tutorial (with Redux)
+
+https://www.youtube.com/playlist?list=PL4cUxeGkcC9ij8CfkAY2RAGb-tmkNwQHG
+
 -------------------------------------------------------------------------------------------------------------------------------------
 
 Installing Redux
@@ -47,5 +73,14 @@ Three Principles of Redux
 Installing React-Redux
 
 ---> npm install --save react-redux
+
+-------------------------------------------------------------------------------------------------------------------------------------
+
+Redux Concepts :
+
+1) Actions
+2) Action Creators
+3) Reducers
+4) Store
 
 -------------------------------------------------------------------------------------------------------------------------------------
