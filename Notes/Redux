@@ -38,6 +38,17 @@ https://redux.js.org/advanced/usage-with-react-router
 https://redux.js.org/advanced/example-reddit-api
 https://redux.js.org/advanced/next-steps
 
+---> Recipes
+
+https://redux.js.org/recipes/recipe-index
+https://redux.js.org/recipes/configuring-your-store
+https://redux.js.org/recipes/migrating-to-redux
+https://redux.js.org/recipes/using-object-spread-operator
+https://redux.js.org/recipes/reducing-boilerplate
+https://redux.js.org/recipes/server-rendering
+https://redux.js.org/recipes/writing-tests
+https://redux.js.org/recipes/computing-derived-data
+
 -------------------------------------------------------------------------------------------------------------------------------------
 
 ---> Tutorial Videos

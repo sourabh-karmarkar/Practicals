@@ -1,0 +1,25 @@
+{
+  "name": "recipes_serverrendering_redux_documentation",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+      "build": "babel index.js -d dist",
+      "start": "npm run build && node index.js"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.16.4",
+    "react": "^16.3.1",
+    "redux": "^3.5.2",
+    "react-redux": "^6.0.0",
+    "react-dom": "^16.3.1",
+    "prop-types": "^15.6.1"
+  },
+  "devDependencies": {
+    "@babel/preset-react": "^7.0.0",
+    "babel-cli": "^6.26.0",
+    "babel-preset-env": "^1.7.0"
+  }
+}
