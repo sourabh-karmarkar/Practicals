@@ -22,6 +22,13 @@ Store git username and password so that no need to install every time you push
 ---------------------------------------------------------------------------
 
 git clone "github link" --> clone a project to your local machine
+
+Clone a specific branch
+
+git clone "repo_link" -b "branch_name"
+
+---------------------------------------------------------------------------
+
 git push origin "local branch name":"remote branch name"
 
 create pull request on github
