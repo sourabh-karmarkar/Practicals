@@ -1,0 +1,110 @@
+-------------------------------------------------------------------------------------------------------------------------------------------
+
+								PYTHON
+
+-------------------------------------------------------------------------------------------------------------------------------------------
+
+https://www.python.org/
+
+33 keywords
+
+-------------------------------------------------------------------------------------------------------------------------------------------
+
+Lisp
+Prolog
+ABC
+Modula-3
+Algol-68
+SmallTalk
+
+-------------------------------------------------------------------------------------------------------------------------------------------
+
+Write a python program to perform addition of 2 number and display the addition on screen as a result
+
+-------------------------------------------------------------------------------------------------------------------------------------------
+
+Step 1 : Start
+Step 2 : Define a variable with a value = number1
+Step 3 : Define a variable with a value = number2
+Step 4 : Perform Addition
+Step 5 : Store result of addtion
+Step 6 : Display result on screen
+Step 7 : Exit/Stop
+
+-------------------------------------------------------------------------------------------------------------------------------------------
+
+Identifier Rules
+
+1) It may only contain letters (uppercase or lowercase), numbers or the underscore character (_).
+2) It may not start with a number.
+3) It may not be a keyword.
+
+-------------------------------------------------------------------------------------------------------------------------------------------
+
+Identifier Names - Guidelines
+
+1) Be Descriptive
+	- variable name should describe the contents of the variable.
+	- a function name must indicate what the function does.
+2) Don't use abbreviations unnecessarily - they may be ambiguous and more difficult to read.
+
+-------------------------------------------------------------------------------------------------------------------------------------------
+
+---> Difference between a function and method
+
+Function - It is always indepedent. Grouping statements together to avoid code duplication
+
+Method - It is always bound to the class.
+
+-------------------------------------------------------------------------------------------------------------------------------------------
+
+---> See the list of builtins in Python
+
+dir(__builtins__)
+
+---> See the built-in methods of a class (string in this case)
+
+dir(str)
+
+-------------------------------------------------------------------------------------------------------------------------------------------
+
+Boolean
+
+1) int
+	other than 0 ---> True
+	0 ---> False
+
+2) float
+	other than 0.0 ---> True
+	0.0 ---> False
+
+3) str
+	other than (Empty String) "" ---> True
+	(Empty String) "" ---> False
+
+Boolean Precedence
+
+1) ()
+2) **
+3) *,/,% +,-
+4) <,<=,>,>=,==,!=
+5) is,is not
+6) not
+7) and
+8) or
+
+-------------------------------------------------------------------------------------------------------------------------------------------
+
+Collections
+
+1) List - mutable
+
+2) Tuple
+
+3) Sets
+
+4) Ranges
+
+5) Dictionaries
+
+-------------------------------------------------------------------------------------------------------------------------------------------

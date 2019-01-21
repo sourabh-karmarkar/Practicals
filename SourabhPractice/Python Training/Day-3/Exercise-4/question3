@@ -1,0 +1,7 @@
+------------------------------------------------------------------------------------------------------------------------
+
+1) What happens when you evaluate 1//0 in the Python console? Why does this happen?
+
+A) It gives "ZeroDivisionError: integer division or modulo by zero" as division by zero is illegal.
+
+------------------------------------------------------------------------------------------------------------------------

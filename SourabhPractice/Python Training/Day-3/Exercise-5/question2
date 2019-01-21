@@ -1,0 +1,22 @@
+------------------------------------------------------------------------------------------------------------------------
+
+1) What is the difference between integer and floating-point division? What is the operator used for integer division?
+   What is the operator used for floating-point division?
+
+A) Integer Division
+	
+	It is used to divide any 2 numbers and obtain the result as an integer.
+
+	Ex : 10 // 3 ---> 9
+
+	The // operator is used for integer division
+
+   Floating-Point Division
+	
+	It is used to divide any 2 numbers and obtain the actual result in the form of decimals.
+
+	Ex : 10 / 3 ---> 3.3333333333333335
+
+	The / operator is used for floating-point division
+
+------------------------------------------------------------------------------------------------------------------------

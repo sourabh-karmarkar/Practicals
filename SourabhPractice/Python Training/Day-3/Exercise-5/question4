@@ -1,0 +1,7 @@
+------------------------------------------------------------------------------------------------------------------------
+
+1) What happens when you evaluate 1/0 in the Python console?
+
+A) It gives "ZeroDivisionError: division by zero" as division by zero is not a valid operation.
+
+------------------------------------------------------------------------------------------------------------------------

@@ -1,0 +1,10 @@
+----------------------------------------------------
+
+1) Which of the following are valid python integers?
+
+110, 1.0, 17.5, -39, -2.3
+
+A) The numbers 110, 1.0, -39 are valid python integers.
+   Rest are floating numbers.
+
+----------------------------------------------------

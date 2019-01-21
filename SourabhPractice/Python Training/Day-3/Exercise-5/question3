@@ -1,0 +1,21 @@
+------------------------------------------------------------------------------------------------------------------------
+
+1) What are the results of the following operations and explain why?
+
+a) 1.5 + 2
+b) 1.5 // 2.0
+c) 1.5 / 2.0
+d) 1.5 ** 2
+e) 1 / 2
+f) -3 // 2
+
+---> Answer
+
+a) 3.5 (simple addition. 2 is treated as 2.0)
+b) 0.0 (this is integer division hence the result)
+c) 0.75 (this is floating-point division hence the result)
+d) 2.25 (this is normal ** operation)
+e) 0.5 (this is normal floating point division)
+f) -2 (this is integer division hence the answer is floored)
+
+------------------------------------------------------------------------------------------------------------------------

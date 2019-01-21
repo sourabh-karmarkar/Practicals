@@ -1,0 +1,19 @@
+------------------------------------------------------------------------------------------------------------------------
+
+1) What are the results of the following operations and explain why?
+
+a) 15 + 20 * 3
+b) 13 // 2 + 3
+c) 31 + 10 // 3
+d) 20 % 7 // 3
+e) 2 ** 3 ** 2
+
+---> Answer
+
+a) 75 (uses the normal bodmas rule. first multiplication then addition)
+b) 9 (uses integer division first hence the 13//2 becomes 6 and then adds 3 to it)
+c) 34 (uses integer division first hence the 10//3 becomes 3 and then adds 31 to it)
+d) 2 (multiple operations at same level of precedence, hence calculates modulus first then integer division)
+e) 512 (** is right-associative hence 3 ** 2 is calculated first which gives 9. Then 2 ** 9 is calculated which gives 512)
+
+------------------------------------------------------------------------------------------------------------------------

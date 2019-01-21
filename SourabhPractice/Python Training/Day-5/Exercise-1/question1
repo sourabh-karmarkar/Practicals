@@ -1,0 +1,10 @@
+1) Which of these fragments are valid and invalid first lines of if statements? Explain Why:
+
+	a) if (x > 4) ---> valid as > operator is used.
+	b) if x == 2 ---> valid as == operator is used.
+ 	c) if (y =< 4) ---> invalid syntax as sequence is not valid. should be <=
+	d) if (y = 5) ---> invalid syntax as assignment is not allowed in if statement.
+	e) if (3 <= a) ---> valid as the sequence is valid i.e <=
+	f) if (1 - 1) ---> valid but evaluates to 0 hence False. So the if statement will not get executed.
+	g) if ((1 - 1) <= 0) ---> valid as the condition evaluates to True.
+	h) if (name=="James") ---> valid as normal string comparison.

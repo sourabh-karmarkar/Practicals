@@ -1,0 +1,19 @@
+--------------------------------------------------------------------------------------------------------------------------------------
+
+Syntax Error	Bad Practice	Good Practice
+
+Person Record	PRcrd		PersonRecord
+DEFAULT-HEIGHT	Default_Ht	DEFAULT_HEIGHT
+class		Class		AlgebraCourse
+2totalweight	num2		total_weight
+
+--------------------------------------------------------------------------------------------------------------------------------------
+
+---> Write down why each of the entries in the left column will raise a syntax error if it is used as an identifier
+
+1) The identifier contains space which is not allowed in Python
+2) The identifier contains - (Python variables can only contain letters(lowercase or uppercase) & numbers (0 to 9) or underscore character(_))
+3) The identifier is a keyword
+4) The identifier starts with a number
+
+--------------------------------------------------------------------------------------------------------------------------------------
