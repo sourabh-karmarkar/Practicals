@@ -1,0 +1,182 @@
+>>> animals=('cat','dog','fish')
+>>> type(animals)
+<class 'tuple'>
+>>> dir(animals)
+['__add__', '__class__', '__contains__', '__delattr__', '__dir__', '__doc__', '__eq__', '__format__', '__ge__', '__getattribute__', '__getitem__', '__getnewargs__', '__gt__', '__hash__', '__init__', '__init_subclass__', '__iter__', '__le__', '__len__', '__lt__', '__mul__', '__ne__', '__new__', '__reduce__', '__reduce_ex__', '__repr__', '__rmul__', '__setattr__', '__sizeof__', '__str__', '__subclasshook__', 'count', 'index']
+>>> my_tuple=()
+>>> another_tuple=Tuple()
+Traceback (most recent call last):
+  File "<stdin>", line 1, in <module>
+NameError: name 'Tuple' is not defined
+>>> another_tuple=tuple()
+>>> type(another_tuple)
+<class 'tuple'>
+>>> print(animals[0])
+cat
+>>> print(animals[6])
+Traceback (most recent call last):
+  File "<stdin>", line 1, in <module>
+IndexError: tuple index out of range
+>>> print(animals[6])
+Traceback (most recent call last):
+  File "<stdin>", line 1, in <module>
+IndexError: tuple index out of range
+>>> print(animals[-1])
+fish
+>>> print(animals)
+('cat', 'dog', 'fish')
+>>> print(animals[-2])
+dog
+>>> print(animals[-3])
+cat
+>>> print(animals[-0])
+cat
+>>> print(animals[0])
+cat
+>>> print(animals[1:3])
+('dog', 'fish')
+>>> print(animals[1:5])
+('dog', 'fish')
+>>> type(animals)
+<class 'tuple'>
+>>> print(animals[1:1000])
+('dog', 'fish')
+>>> print(animals[1:-1])
+('dog',)
+>>> print(animals[2:])
+('fish',)
+>>> print(animals[1:])
+('dog', 'fish')
+>>> print(animals[0:])
+('cat', 'dog', 'fish')
+>>> print(animals[:2])
+('cat', 'dog')
+>>> print(animals[2:2])
+()
+>>> print(animals[1:2])
+('dog',)
+>>> print(animals[::2])
+('cat', 'fish')
+>>> del animals[2]
+Traceback (most recent call last):
+  File "<stdin>", line 1, in <module>
+TypeError: 'tuple' object doesn't support item deletion
+>>> numbers=(34,52,78,96,43,14,78)
+>>> my_number=78
+>>> 78 in numbers
+True
+>>> 12 in numbers
+False
+>>> 78 not in numbers
+False
+>>> 12 not in numbers
+True
+>>> len(numbers)
+7
+>>> sum(numbers)
+395
+>>> any(numbers)
+True
+>>> any((1,0,1,1))
+True
+>>> any((0,0,0,0))
+False
+>>> all((0,0,0,0))
+False
+>>> all((0,0,0,1))
+False
+>>> all((1,1,1,1))
+True
+>>> numbers.count(52)
+1
+>>> numbers.count(14)
+1
+>>> numbers.count(1)
+0
+>>> numbers.count(dfs)
+Traceback (most recent call last):
+  File "<stdin>", line 1, in <module>
+NameError: name 'dfs' is not defined
+>>> numbers.count(56)
+0
+>>> numbers.count(animals[0])
+0
+>>> numbers.count(animals[1])
+0
+>>> numbers.index(56)
+Traceback (most recent call last):
+  File "<stdin>", line 1, in <module>
+ValueError: tuple.index(x): x not in tuple
+>>> numbers.index(3)
+Traceback (most recent call last):
+  File "<stdin>", line 1, in <module>
+ValueError: tuple.index(x): x not in tuple
+>>> numbers.index(12)
+Traceback (most recent call last):
+  File "<stdin>", line 1, in <module>
+ValueError: tuple.index(x): x not in tuple
+>>> numbers
+(34, 52, 78, 96, 43, 14, 78)
+>>> numbers.index(78)
+2
+>>> numbers.index(78)
+2
+>>> print(sorted(numbers))
+[14, 34, 43, 52, 78, 78, 96]
+>>> print(reversed(numbers))
+<reversed object at 0x7f2c3d3f76a0>
+>>> print(tuple(reversed(numbers)))
+(78, 14, 43, 96, 78, 52, 34)
+>>> print(list(reversed(numbers)))
+[78, 14, 43, 96, 78, 52, 34]
+>>> print(numbers)
+(34, 52, 78, 96, 43, 14, 78)
+>>> print((1,2,3)+(4,5,6))
+(1, 2, 3, 4, 5, 6)
+>>>
+>>>
+>>>
+>>>
+>>> print((1,2,3)*3)
+(1, 2, 3, 1, 2, 3, 1, 2, 3)
+>>> print([1,2,3]+[4,5,6])
+[1, 2, 3, 4, 5, 6]
+>>> print([1,2,3]-[1,2])
+Traceback (most recent call last):
+  File "<stdin>", line 1, in <module>
+TypeError: unsupported operand type(s) for -: 'list' and 'list'
+>>> print((1,2,3)*3)
+(1, 2, 3, 1, 2, 3, 1, 2, 3)
+>>>
+>>>
+>>>
+>>>
+>>> a_tuple=(1,2,3)
+>>> print(a_tuple*3)
+(1, 2, 3, 1, 2, 3, 1, 2, 3)
+>>> print(a_tuple)
+(1, 2, 3)
+>>> b_tuple
+Traceback (most recent call last):
+  File "<stdin>", line 1, in <module>
+NameError: name 'b_tuple' is not defined
+>>> b_tuple=(3)
+>>> b_tuple
+3
+>>> type(b_tuple)
+<class 'int'>
+>>> b_tuple=(3,)
+>>> type(b_tuple)
+<class 'tuple'>
+>>> b_tuple=(3,4,5)
+>>> a_tuple
+(1, 2, 3)
+>>> b_tuple
+(3, 4, 5)
+>>> print(a_tuple+b_tuple)
+(1, 2, 3, 3, 4, 5)
+>>> b_tuple
+(3, 4, 5)
+>>> c_tuple=(2,)
+>>> c_tuple
+(2,)

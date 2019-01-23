@@ -1,0 +1,176 @@
+>>> animals=['cat','dog','goldfish','canary','cat']
+>>> type(animals)
+<class 'list'>
+>>> animals_set=set(animals)
+>>>
+>>> type(animals_set)
+<class 'set'>
+>>> animals_set
+{'cat', 'goldfish', 'dog', 'canary'}
+>>> animals_unique_list=list(animals_set)
+>>> animals_unique_list
+['cat', 'goldfish', 'dog', 'canary']
+>>> type(animals_unique_list)
+<class 'list'>
+>>> animals_unique_tuple=tuple(animals_unique_list)
+>>> animals_unique_tuple
+('cat', 'goldfish', 'dog', 'canary')
+>>> type(animals_unique_tuple)
+<class 'tuple'>
+>>> marbles={"red":34,"green":30,"brown":31,"yellow":29}
+>>> colours=list(marbles)
+>>> colours
+['red', 'green', 'brown', 'yellow']
+>>> colours=list(marbles.values())
+>>> colours
+[34, 30, 31, 29]
+>>> marbles_set=set(marbles)
+>>> marbles
+{'red': 34, 'green': 30, 'brown': 31, 'yellow': 29}
+>>> marbles_set=set(marbles.items())
+>>> marbles
+{'red': 34, 'green': 30, 'brown': 31, 'yellow': 29}
+>>> type(marbles)
+<class 'dict'>
+>>> marbles_set=set(marbles.values())
+>>> marbles_set
+{34, 29, 30, 31}
+>>> marbles_set=set(marbles.items())
+>>> marbles_set
+{('brown', 31), ('red', 34), ('green', 30), ('yellow', 29)}
+>>> type(marbles_set)
+<class 'set'>
+>>> dict([2,3,4,6])
+Traceback (most recent call last):
+  File "<stdin>", line 1, in <module>
+TypeError: cannot convert dictionary update sequence element #0 to a sequence
+>>> dict(marbles_set)
+{'brown': 31, 'red': 34, 'green': 30, 'yellow': 29}
+>>> dict([(1,2),(2,4)])
+{1: 2, 2: 4}
+>>> dict((1,2),(2,4))
+Traceback (most recent call last):
+  File "<stdin>", line 1, in <module>
+TypeError: dict expected at most 1 arguments, got 2
+>>> dict(((1,2),(2,4)))
+{1: 2, 2: 4}
+>>> s="abracadabra"
+>>> len(s)
+11
+>>> type(s)
+<class 'str'>
+>>> s.index('a')
+0
+>>> s[0]
+'a'
+>>> s[3:5]
+'ac'
+>>> s[-3:5]
+''
+>>> s[3:-5]
+'aca'
+>>> s[0]='b'
+Traceback (most recent call last):
+  File "<stdin>", line 1, in <module>
+TypeError: 'str' object does not support item assignment
+>>> 'a' in ''abcd
+  File "<stdin>", line 1
+    'a' in ''abcd
+                ^
+SyntaxError: invalid syntax
+>>> 'a' in 'abcd'
+True
+>>> 'ab' in 'abcd'
+True
+>>> 'ab' in 'ababcd'
+True
+>>> abc_list=list("abracadabra")
+>>> abc_list
+['a', 'b', 'r', 'a', 'c', 'a', 'd', 'a', 'b', 'r', 'a']
+>>> str(abc_list)
+"['a', 'b', 'r', 'a', 'c', 'a', 'd', 'a', 'b', 'r', 'a']"
+>>> dir(str)
+['__add__', '__class__', '__contains__', '__delattr__', '__dir__', '__doc__', '__eq__', '__format__', '__ge__', '__getattribute__', '__getitem__', '__getnewargs__', '__gt__', '__hash__', '__init__', '__init_subclass__', '__iter__','__le__', '__len__', '__lt__', '__mod__', '__mul__', '__ne__', '__new__', '__reduce__', '__reduce_ex__', '__repr__', '__rmod__', '__rmul__', '__setattr__', '__sizeof__', '__str__', '__subclasshook__', 'capitalize', 'casefold', 'center', 'count', 'encode', 'endswith', 'expandtabs', 'find', 'format', 'format_map', 'index', 'isalnum', 'isalpha', 'isdecimal', 'isdigit', 'isidentifier', 'islower', 'isnumeric', 'isprintable', 'isspace', 'istitle', 'isupper', 'join', 'ljust', 'lower', 'lstrip', 'maketrans', 'partition', 'replace', 'rfind', 'rindex', 'rjust', 'rpartition', 'rsplit', 'rstrip', 'split', 'splitlines', 'startswith', 'strip', 'swapcase', 'title', 'translate', 'upper', 'zfill']
+>>> dir(abc_list)
+['__add__', '__class__', '__contains__', '__delattr__', '__delitem__', '__dir__', '__doc__', '__eq__', '__format__', '__ge__', '__getattribute__', '__getitem__', '__gt__', '__hash__', '__iadd__', '__imul__', '__init__', '__init_subclass__', '__iter__', '__le__', '__len__', '__lt__', '__mul__', '__ne__', '__new__', '__reduce__', '__reduce_ex__', '__repr__', '__reversed__', '__rmul__', '__setattr__', '__setitem__', '__sizeof__', '__str__', '__subclasshook__', 'append', 'clear', 'copy', 'count', 'extend', 'index', 'insert', 'pop', 'remove', 'reverse', 'sort']
+>>> s="".join(abc_list)
+>>> s
+'abracadabra'
+>>>
+>>>
+>>>
+>>>
+>>> animals=('cat','dog','fish')
+>>> "".join(animals)
+'catdogfish'
+>>> ",".join(animals)
+'cat,dog,fish'
+>>> ", ".join(animals)
+'cat, dog, fish'
+>>> new_str=", ".join(animals)
+>>> list(str)
+Traceback (most recent call last):
+  File "<stdin>", line 1, in <module>
+TypeError: 'type' object is not iterable
+>>> list(new_str)
+['c', 'a', 't', ',', ' ', 'd', 'o', 'g', ',', ' ', 'f', 'i', 's', 'h']
+>>> animals.split()
+Traceback (most recent call last):
+  File "<stdin>", line 1, in <module>
+AttributeError: 'tuple' object has no attribute 'split'
+>>> new_str.split()
+['cat,', 'dog,', 'fish']
+>>> animals.split(",")
+Traceback (most recent call last):
+  File "<stdin>", line 1, in <module>
+AttributeError: 'tuple' object has no attribute 'split'
+>>> new_str.split(",")
+['cat', ' dog', ' fish']
+>>> new_str.split(", ")
+['cat', 'dog', 'fish']
+>>> new_str
+'cat, dog, fish'
+>>> new_str
+'cat, dog, fish'
+>>> animals
+('cat', 'dog', 'fish')
+>>> "".join(animals)
+'catdogfish'
+>>> "".join(animals,",")
+Traceback (most recent call last):
+  File "<stdin>", line 1, in <module>
+TypeError: join() takes exactly one argument (2 given)
+>>> "".join(animals)
+'catdogfish'
+>>> newstr="".join(animals)
+>>> newstr
+'catdogfish'
+>>> newstr.split()
+['catdogfish']
+>>> newstr.split(",")
+['catdogfish']
+>>> new_str
+'cat, dog, fish'
+>>> new_str.split(",")
+['cat', ' dog', ' fish']
+>>> new_str.split(", ",1)
+['cat', 'dog, fish']
+>>> new_str.split(", ",2)
+['cat', 'dog', 'fish']
+>>> new_str.split(", ",0)
+['cat, dog, fish']
+>>> new_str.split(", ",1)
+['cat', 'dog, fish']
+>>> my_table=[]
+>>> my_table=[[1,2,3],[4,5,6],[7,8,9],[10,11,12]]
+>>> my_table
+[[1, 2, 3], [4, 5, 6], [7, 8, 9], [10, 11, 12]]
+>>> my_table[2]
+[7, 8, 9]
+>>> my_table[2][1]
+8
+>>> my_table[0][1]
+2
+>>> my_table[0][1]=44
+>>> my_table
+[[1, 44, 3], [4, 5, 6], [7, 8, 9], [10, 11, 12]]

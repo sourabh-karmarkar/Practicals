@@ -1,0 +1,158 @@
+>>> animals={'cat','dog','goldfish','canary','cat'}
+>>> animals
+{'cat', 'dog', 'canary', 'goldfish'}
+>>> dir(set)
+['__and__', '__class__', '__contains__', '__delattr__', '__dir__', '__doc__', '__eq__', '__format__', '__ge__', '__getattribute__', '__gt__', '__hash__', '__iand__', '__init__', '__init_subclass__', '__ior__', '__isub__', '__iter__', '__ixor__', '__le__', '__len__', '__lt__', '__ne__', '__new__', '__or__', '__rand__', '__reduce__', '__reduce_ex__', '__repr__', '__ror__', '__rsub__', '__rxor__', '__setattr__', '__sizeof__', '__str__', '__sub__', '__subclasshook__', '__xor__', 'add', 'clear', 'copy', 'difference', 'difference_update', 'discard', 'intersection', 'intersection_update', 'isdisjoint', 'issubset', 'issuperset', 'pop', 'remove', 'symmetric_difference', 'symmetric_difference_update', 'union', 'update']
+>>> my_set={1,2,3,4,5,6}
+>>> another_set={4,5,6}
+>>> my_set.issuperset(another_set)
+True
+>>> another_set.issubset(my_set)
+True
+>>> another_set.add(7)
+>>> another_set
+{4, 5, 6, 7}
+>>> my_set
+{1, 2, 3, 4, 5, 6}
+>>> my_set.add(another_set)
+Traceback (most recent call last):
+  File "<stdin>", line 1, in <module>
+TypeError: unhashable type: 'set'
+>>> my_set.update(another_set)
+>>> my_set
+{1, 2, 3, 4, 5, 6, 7}
+>>> another_set
+{4, 5, 6, 7}
+>>> big_numbers={6,7,8,9,10}
+>>> another_big_numbers=big_numbers.copy()
+>>> big_numbers
+{6, 7, 8, 9, 10}
+>>> another_big_numbers
+{6, 7, 8, 9, 10}
+>>> another_big_numbers.difference(even_numbers)
+Traceback (most recent call last):
+  File "<stdin>", line 1, in <module>
+NameError: name 'even_numbers' is not defined
+>>> even_numbers={2,4,6,8,10}
+>>> another_big_numbers.difference(even_numbers)
+{9, 7}
+>>> another_big_numbers.difference_update(even_numbers)
+>>> another_big_numbers
+{7, 9}
+>>> even_numbers
+{2, 4, 6, 8, 10}
+>>> animals={'zebra','cat','lion','fish','dog'}
+>>> animals
+{'dog', 'zebra', 'cat', 'fish', 'lion'}
+>>> sorted(animals)
+['cat', 'dog', 'fish', 'lion', 'zebra']
+>>> set(sorted(animals))
+{'dog', 'cat', 'zebra', 'fish', 'lion'}
+>>> animals
+{'dog', 'zebra', 'cat', 'fish', 'lion'}
+>>> animals[0]
+Traceback (most recent call last):
+  File "<stdin>", line 1, in <module>
+TypeError: 'set' object does not support indexing
+>>> a={}
+>>> type(a)
+<class 'dict'>
+>>> b=set()
+>>> type(b)
+<class 'set'>
+>>> range
+<class 'range'>
+>>> range(10)
+range(0, 10)
+>>> my_num=range(10)
+>>> my_num
+range(0, 10)
+>>> list(my_num)
+[0, 1, 2, 3, 4, 5, 6, 7, 8, 9]
+>>> my_num=rang(1,11)
+Traceback (most recent call last):
+  File "<stdin>", line 1, in <module>
+NameError: name 'rang' is not defined
+>>> my_num=range(1,11)
+>>> list(my_num)
+[1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
+>>> my_num=range(1,11,2)
+>>> list(my_num)
+[1, 3, 5, 7, 9]
+>>> marbles={"red":34,"green":30,"brown":31,"yellow":29}
+>>> marbles
+{'red': 34, 'green': 30, 'brown': 31, 'yellow': 29}
+>>> personal_details={"name":"Jane Doe","age":38,}
+>>> personal_details
+{'name': 'Jane Doe', 'age': 38}
+>>> marbles["]
+  File "<stdin>", line 1
+    marbles["]
+             ^
+SyntaxError: EOL while scanning string literal
+>>> marbles["green"]
+30
+>>> personal_details["name"]
+'Jane Doe'
+>>> marbles["blue"]
+Traceback (most recent call last):
+  File "<stdin>", line 1, in <module>
+KeyError: 'blue'
+>>> marbles["red"]+=3
+>>> marbles
+{'red': 37, 'green': 30, 'brown': 31, 'yellow': 29}
+>>> personal_details["name"]="Sourabh Karmarkar"
+>>> personal_details
+{'name': 'Sourabh Karmarkar', 'age': 38}
+>>> marbles["blue"]=56
+>>> marbles
+{'red': 37, 'green': 30, 'brown': 31, 'yellow': 29, 'blue': 56}
+>>> marbles["green"]=50
+>>> marbles
+{'red': 37, 'green': 50, 'brown': 31, 'yellow': 29, 'blue': 56}
+>>> battleship_guesses={(3,4):False,(2,6):True,(2,5):True}
+>>> battleship_guesses[(3,4)]
+False
+>>> dir(marbles)
+['__class__', '__contains__', '__delattr__', '__delitem__', '__dir__', '__doc__', '__eq__', '__format__', '__ge__','__getattribute__', '__getitem__', '__gt__', '__hash__', '__init__', '__init_subclass__', '__iter__', '__le__', '__len__', '__lt__', '__ne__', '__new__', '__reduce__', '__reduce_ex__', '__repr__', '__setattr__', '__setitem__', '__sizeof__', '__str__', '__subclasshook__', 'clear', 'copy', 'fromkeys', 'get', 'items', 'keys', 'pop', 'popitem', 'setdefault', 'update', 'values']
+>>> marbles["orange"]
+Traceback (most recent call last):
+  File "<stdin>", line 1, in <module>
+KeyError: 'orange'
+>>> marbles.get("orange")
+>>> non=marbles.get("orange")
+>>> non
+>>> print(non)
+None
+>>> type(non)
+<class 'NoneType'>
+>>> marbles.get("orange",0)
+0
+>>> marbles.get("orange","hello")
+'hello'
+>>> marbles.keys()
+dict_keys(['red', 'green', 'brown', 'yellow', 'blue'])
+>>> marbles.get("red","hello")
+37
+>>> another_marbles={"orange":34,"blue":23,"purple":36}
+>>> another_marbles
+{'orange': 34, 'blue': 23, 'purple': 36}
+>>> marbles.update(another_marbles)
+>>> marbles
+{'red': 37, 'green': 50, 'brown': 31, 'yellow': 29, 'blue': 23, 'orange': 34, 'purple': 36}
+>>> marbles.values()
+dict_values([37, 50, 31, 29, 23, 34, 36])
+>>> marbles.items()
+dict_items([('red', 37), ('green', 50), ('brown', 31), ('yellow', 29), ('blue', 23), ('orange', 34), ('purple', 36)])
+>>> purple in marbles
+Traceback (most recent call last):
+  File "<stdin>", line 1, in <module>
+NameError: name 'purple' is not defined
+>>> "purple" in marbles
+True
+>>> "white" in marbles
+False
+>>> "white" not in marbles
+True
+>>> 50 in marbles.values()
+True

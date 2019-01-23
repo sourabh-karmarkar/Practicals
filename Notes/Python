@@ -1,6 +1,6 @@
 -------------------------------------------------------------------------------------------------------------------------------------------
 
-								PYTHON
+												PYTHON
 
 -------------------------------------------------------------------------------------------------------------------------------------------
 
@@ -97,14 +97,64 @@ Boolean Precedence
 
 Collections
 
-1) List - mutable
+1) List - mutable ---> []			|
+									|	Can store any type of data
+2) Tuple - immutable ---> ()		|
 
-2) Tuple
+3) Sets - duplicate not allowed. Does not maintain insertion order. ---> {}
 
-3) Sets
+4) Ranges - immutable (they are also generators)
 
-4) Ranges
+5) Dictionaries - mutable (keys don't have to be strings. They can be any immutable types)
 
-5) Dictionaries
+-------------------------------------------------------------------------------------------------------------------------------------------
+
+Installing pip
+
+sudo apt install python3-pip
+
+-------------------------------------------------------------------------------------------------------------------------------------------
+
+Loops
+
+- Counting Loops (for loop)
+- Event-controlled loops (while loop)
+
+-------------------------------------------------------------------------------------------------------------------------------------------
+
+Errors
+
+Syntax Errors
+Runtime Errors
+Logical Errors
+
+-------------------------------------------------------------------------------------------------------------------------------------------
+
+Debugging Programs
+
+pdb is a built in python module which we can use to debug a program while it is running.
+
+---> running pdb as a script
+
+python3 -m pdb file_name.py
+
+Some debugging tools
+
+- Pyflakes
+- Pylint
+- PyChecker
+- Pep8
+
+-------------------------------------------------------------------------------------------------------------------------------------------
+
+Logging
+
+Logging Levels Are --->
+
+- CRITICAL
+- ERROR
+- WARNING
+- INFO
+- DEBUG
 
 -------------------------------------------------------------------------------------------------------------------------------------------
