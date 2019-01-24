@@ -158,3 +158,19 @@ Logging Levels Are --->
 - DEBUG
 
 -------------------------------------------------------------------------------------------------------------------------------------------
+
+---> Installing Python-pip
+
+sudo apt install python-pip
+
+---> Then install pep8 - for coding standards
+
+pip install pep8
+
+-------------------------------------------------------------------------------------------------------------------------------------------
+
+Decorator
+
+We write a function which will modify the behaviour of another function. This is done through decorators.
+
+-------------------------------------------------------------------------------------------------------------------------------------------

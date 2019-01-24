@@ -4,3 +4,7 @@
 
 """
 
+# creating empty list
+calendar = [[[] for w in range(7)] for m in range(52)]
+
+print(calendar)
