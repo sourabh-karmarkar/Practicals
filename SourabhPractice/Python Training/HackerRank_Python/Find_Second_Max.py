@@ -1,0 +1,5 @@
+n = int(input("Enter Num :"))
+arr = map(int, input("Enter element 1 :").split())
+num_list = list(arr)
+max_val = max(num_list)
+print(max(list(filter(lambda a: a != max_val,num_list))))
