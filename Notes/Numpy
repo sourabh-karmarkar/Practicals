@@ -1,0 +1,39 @@
+-------------------------------------------------------------------------------------------------------------------------------------
+
+												NumPy
+
+-------------------------------------------------------------------------------------------------------------------------------------
+
+clone Tutorials_Numpy from sourabh-karmarkar
+
+Then execute the following commands
+
+---> pip3 install virtualenv
+
+---> make deps
+
+---> vi Makefile
+
+---> make the following change :
+
+installvirtualenv:
+	pip3 install virtualenv
+
+---> Execute the following command
+
+make start
+
+-------------------------------------------------------------------------------------------------------------------------------------
+
+summing accros access (imagine as a cube)
+
+array=np.arange(36).reshape(4,3,3)
+rowadd=np.sum(array,axis=0)
+coladd=np.sum(array,axis=1)
+zadd=np.sum(array,axis=2)
+print("Array --->\n",array)
+print("Row Sum ---> \n",rowadd)
+print("Column Sum ---> \n",coladd)
+print("z sum ---> \n",zadd)
+
+-------------------------------------------------------------------------------------------------------------------------------------

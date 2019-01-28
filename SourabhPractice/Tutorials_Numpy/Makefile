@@ -18,7 +18,7 @@ cleanenv:
 	rm -rf .env
 
 installvirtualenv:
-	pip install virtualenv
+	pip3 install virtualenv
 
 
 deps: $(PRE_DEPS)
