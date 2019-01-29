@@ -7,7 +7,8 @@ endif
 
 .env:
 	virtualenv --python=python3 .env
-	$(VIRTUAL_ENV)/bin/pip install -U pip setuptools
+	$(VIRTUAL_ENV)/bin/pip install -U pip 
+tools
 
 clean:
 	find . -name '*.pyc' -delete

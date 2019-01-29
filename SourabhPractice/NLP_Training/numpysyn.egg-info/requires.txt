@@ -1,0 +1,5 @@
+opencv-python==3.4.3.18
+jupyter==1.0.0
+pandas
+bs4
+spacy

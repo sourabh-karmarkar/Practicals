@@ -1,0 +1,78 @@
+-------------------------------------------------------------------------------------------------------------------------------------
+
+												MACHINE LEARNING
+
+-------------------------------------------------------------------------------------------------------------------------------------
+
+---> Libraries
+
+scikit-learn
+caffe
+DL4J
+Tensorflow
+Theano
+CNTK
+Torch
+Spark Mlib
+Mahout
+Weka
+
+-------------------------------------------------------------------------------------------------------------------------------------
+
+---> Languages
+
+python
+Lua
+R
+c++
+Java
+Scala
+
+-------------------------------------------------------------------------------------------------------------------------------------
+
+---> Platforms
+
+Azure ML
+Amazon Machine Learning
+Google Prediction API
+Nervana
+H2O
+
+-------------------------------------------------------------------------------------------------------------------------------------
+
+											NATURAL LANGUAGE PROCESSING ( NLP )
+
+-------------------------------------------------------------------------------------------------------------------------------------
+
+NLP makes use of following techniques :
+
+Hand Written Rules
+Liguistic Rules
+Statistical Techniques
+Machine Learning Techniques
+QA Systems - Watson, Wolframalpha
+
+-------------------------------------------------------------------------------------------------------------------------------------
+
+Types of QA Systems :
+
+- Open Domain (Domain Independent Systems)
+- Closed Domain (Domain Specific Systems)
+
+-------------------------------------------------------------------------------------------------------------------------------------
+
+Some Important Libraries :
+
+SPACY
+SYNTAXNET
+NLTK
+CORENLP
+
+Other Tools/Packages :
+
+Some Languages Used ---> Python, Java, C++
+TextBlob (Wrapper over NLTK)
+Scikit Learn (Machine Learning in Python)
+Gensim (Topic Modelling, Word Embeddings)
+
+-------------------------------------------------------------------------------------------------------------------------------------
