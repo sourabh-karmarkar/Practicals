@@ -13,4 +13,5 @@ setup(name='numpysyn',
                         'jupyter==1.0.0',
 						'pandas',
 						'bs4',
-						'spacy'])
+						'spacy',
+						'sklearn'])
