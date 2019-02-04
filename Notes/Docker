@@ -1,0 +1,99 @@
+----------------------------------------------------------------------------------------------------------------
+
+												DOCKER
+
+----------------------------------------------------------------------------------------------------------------
+
+https://www.docker.com/
+https://hub.docker.com/
+
+----------------------------------------------------------------------------------------------------------------
+
+---> Installing Docker ( Ubuntu )
+
+https://docs.docker.com/install/linux/docker-ce/ubuntu/#install-docker-ce
+(Follow Install From Package in the link)
+
+https://download.docker.com/linux/ubuntu/dists/
+(This link is given on the above website link for downloading .deb files)
+
+Install all the three files specified in the documentation of the above link.
+
+---> Running the installation command
+
+sudo dpkg -i /path/to/package.deb
+
+1) Install the docker-ce-cli
+2) Then install the containerd.io
+3) Then install the final file docker-ce (This installation depends on the previous 2 installations)
+
+----------------------------------------------------------------------------------------------------------------
+
+Some important links
+
+---> Running mongodb container
+
+https://www.thachmai.info/2015/04/30/running-mongodb-container/
+
+----------------------------------------------------------------------------------------------------------------
+
+---> To check whether installation successfull run the following command
+
+sudo docker run hello-world
+
+---> To run a ubuntu instance in a container run the following command
+
+sudo docker run -it ubuntu bash
+
+----------------------------------------------------------------------------------------------------------------
+
+---> Docker commands
+
+a) show running docker containers
+
+sudo docker container ls
+
+b) show all docker containers
+
+sudo docker container ls -a
+
+c) remove docker containers
+
+sudo docker container rm [container_id]
+
+d) see list of docker images
+
+sudo docker images
+
+e) remove list of docker images
+
+sudo docker image rm [image_id]
+
+----------------------------------------------------------------------------------------------------------------
+
+---> Running a docker instance with html files in it
+
+sudo docker container run -d -p 8080:80 -v $(pwd):/usr/share/nginx/html --name nginx-website nginx
+
+---> Build docker image by specifying the container name
+
+sudo docker image build -t sourabh94/nginx-website .
+
+---> Then we can remove the container from our system as we have built an image.
+
+sudo docker rm nginx-website -f
+
+---> To push the image to hub.docker.com
+
+sudo docker push sourabh94/nginx-website
+
+---> If it gives login error then use the following command and enter the credntials of your docker hub account
+
+sudo docker login
+
+---> To run your created image on docker hub in a container go to the directory where the project folders are
+	 and enter the following command
+
+sudo docker container run -d -p 8080:80 -v $(pwd) sourabh94/nginx-website
+
+----------------------------------------------------------------------------------------------------------------
