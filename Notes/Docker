@@ -1,13 +1,14 @@
-----------------------------------------------------------------------------------------------------------------
+--------------------------------------------------------------------------------------------------------------------------
 
 												DOCKER
 
-----------------------------------------------------------------------------------------------------------------
+--------------------------------------------------------------------------------------------------------------------------
 
 https://www.docker.com/
 https://hub.docker.com/
+https://docs.docker.com/compose/install/
 
-----------------------------------------------------------------------------------------------------------------
+--------------------------------------------------------------------------------------------------------------------------
 
 ---> Installing Docker ( Ubuntu )
 
@@ -27,7 +28,7 @@ sudo dpkg -i /path/to/package.deb
 2) Then install the containerd.io
 3) Then install the final file docker-ce (This installation depends on the previous 2 installations)
 
-----------------------------------------------------------------------------------------------------------------
+--------------------------------------------------------------------------------------------------------------------------
 
 Some important links
 
@@ -35,7 +36,7 @@ Some important links
 
 https://www.thachmai.info/2015/04/30/running-mongodb-container/
 
-----------------------------------------------------------------------------------------------------------------
+--------------------------------------------------------------------------------------------------------------------------
 
 ---> To check whether installation successfull run the following command
 
@@ -45,7 +46,7 @@ sudo docker run hello-world
 
 sudo docker run -it ubuntu bash
 
-----------------------------------------------------------------------------------------------------------------
+--------------------------------------------------------------------------------------------------------------------------
 
 ---> Docker commands
 
@@ -69,7 +70,7 @@ e) remove list of docker images
 
 sudo docker image rm [image_id]
 
-----------------------------------------------------------------------------------------------------------------
+--------------------------------------------------------------------------------------------------------------------------
 
 ---> Running a docker instance with html files in it
 
@@ -96,4 +97,68 @@ sudo docker login
 
 sudo docker container run -d -p 8080:80 -v $(pwd) sourabh94/nginx-website
 
-----------------------------------------------------------------------------------------------------------------
+--------------------------------------------------------------------------------------------------------------------------
+
+												Mongo
+
+---> To run a mongo instance in a container run the following command
+
+	sudo docker run -d -p 27017:27017 -v ~/data:/data/db mongo
+
+ex: sudo docker run (run as daemon process) -p (the port to which it maps) -v (folder which mongo accesses) mongo
+
+---> check the port on which mongo instance containers are running
+
+sudo lsof -i -P -n | grep LISTEN
+
+---> Run the specific container in bash mode, then go in the mongo shell by typing mongo
+
+docker exec -it [container_name] bash
+
+---> Try connecting to 2 different mongo container instances by node.
+	[
+		you should have mongodb package installed in your system.
+		Node uses this package to connect to mongodb.
+		- npm install mongodb
+	]
+
+------------------------------------------------------------------->
+
+var mongoclient=require('mongodb');
+var url="mongodb://localhost:37017/";
+mongoclient.connect(url,{useNewUrlParser:true},function(err,db1){
+    if(err) throw err;
+    var dbo=db1.db("Database Name");
+    
+    //find multiple documents
+    dbo.collection("cities").find({}).toArray(function(err,result){
+        if(err) throw err;
+        console.log("Showing Multiple Documents\n");
+        console.log(result);
+        db1.close();
+    });
+});
+
+------------------------------------------------------------------->
+
+--------------------------------------------------------------------------------------------------------------------------
+
+									Installing docker-compose
+
+---> Download the latest version of Docker Compose for linux
+
+https://github.com/docker/compose/releases 
+
+---> Then copy the dowloaded file in the following directory i.e usr/local/bin directory
+
+sudo cp synerzip/Downloads/docker-compose ../usr/local/bin
+
+---> Then the change the mode of the file to make the file executable
+
+sudo chmod +x /usr/local/bin/docker-compose
+
+---> Check the version of the Docker Compose
+
+docker-compose version
+
+--------------------------------------------------------------------------------------------------------------------------
