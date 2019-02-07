@@ -1,0 +1,161 @@
+-------------------------------------------------------------------------------------------------------------------
+
+									SERVERLESS ARCHITECHTURE AND TOOLS
+
+-------------------------------------------------------------------------------------------------------------------
+
+---> Serverless Providers
+
+IBM Openwhisk
+AWS Lambda
+Azure Functions
+Google Cloud Functions
+Auth0 Webtask
+
+-------------------------------------------------------------------------------------------------------------------
+
+---> Pros of being server-less
+
+Server management not necessary.
+Each request is given its own virtual HTTP "server".
+Serverless architechtures are inherently scalable, so no requests ever time out.
+Quick deployments and updates are possible.
+Code can run closer to the end user, decreasing latency.
+Lower cost.
+More time for user experience.
+
+-------------------------------------------------------------------------------------------------------------------
+
+---> Cons of being server-less
+
+Vendor lock-in
+Learning Curve
+Unsuitable for long term tasks
+
+-------------------------------------------------------------------------------------------------------------------
+
+---> Serverless Microframework for AWS
+
+Chalice
+Serverless
+Zappa
+Claudia
+
+-------------------------------------------------------------------------------------------------------------------
+
+---> AWS Lambda Summary
+
+- AWS Lambda
+- Executing Lambda Function
+- Creating Lambda Triggers
+- Serverless RESTful API
+- AWS CLI
+
+-------------------------------------------------------------------------------------------------------------------
+
+												AWS CLI
+
+---> Installing AWS CLI
+
+pip install awscli --upgrade
+
+---> To see the AWS Lambda Functions help
+
+aws lambda help
+
+---> Configure CLI (enter the below command and give the necessary credentials)
+
+aws configure
+
+---> Create handler.py file and write the following code
+
+----------------------------------------------------------------------
+
+	from __future__ import print_function
+
+	print("Loading Function")
+
+	def lambda_handler(event, context):
+		return "Hello World! Response By Lambda Function"
+
+----------------------------------------------------------------------
+
+---> Create a zip file of the handler.py in the same directory
+
+zip -r hello_world_package.zip handler.py
+
+---> Create Function Through CLI (See help and provide the necessary parameters)
+
+aws lambda create-function --function-name HelloWorldCLI --description 'Hello world lambda function created AWS CLI' --runtime python3.6 --handler 'handler.lambda_handler' --role arn:aws:iam::445420586144:role/kiwano-dev-ZappaLambdaExecutionRole --zip-file fileb://hello_world_package.zip
+
+---> Then invoke the function through CLI
+
+aws lambda invoke --function-name HelloWorldCLI hello.txt
+
+-------------------------------------------------------------------------------------------------------------------
+
+													PIPENV
+
+---> Installing Pipenv
+
+pip install pipenv
+
+---> See the details of available pipenv commands
+
+pipenv
+
+---> Create a new python project (automatically created virtual environment also)
+
+pipenv --python python3.6
+
+---> Activate virtual environment and launch pipenv shell
+
+pipenv shell
+
+-------------------------------------------------------------------------------------------------------------------
+
+---> Installing Flask in virtual environment
+
+pipenv install flask
+
+-------------------------------------------------------------------------------------------------------------------
+
+---> Installing Zappa in virtual environment
+
+pipenv install zappa
+
+-------------------------------------------------------------------------------------------------------------------
+
+												ZAPPA
+
+(The directory in which zappa is installed must have a hello.py file with flask, for our example to run successfully)
+
+- hello.py
+-------------------------------------------------------------------------------
+
+	from flask import Flask
+	app = Flask(__name__)
+
+	@app.route('/')
+	def hello_world():
+		return 'Hello, World!'
+	if (__name__)=="__main__":
+		app.run()
+
+-------------------------------------------------------------------------------
+
+---> For initializing zappa ( give the environment, bucket, the app's function and whether you want to deploy the application globally )
+
+zappa init
+
+---> To deploy zappa application for the first time
+
+zappa deploy dev
+
+( After deploying then go to the link which appears. You will see Hello World on the browser )
+
+---> To deploy zappa application for 2nd time or more
+
+zappa update dev
+
+-------------------------------------------------------------------------------------------------------------------
