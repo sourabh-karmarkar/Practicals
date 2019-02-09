@@ -1,0 +1,58 @@
+-------------------------------------------------------------------------------------------------------------------------------------
+
+											QUALITY ASSURANCE ( QA )
+
+-------------------------------------------------------------------------------------------------------------------------------------
+
+---> Some important terms
+
+- Defect
+- Test Case
+- Quality
+- Quality Assurance (QA)
+- Quality Control (QC)
+
+-------------------------------------------------------------------------------------------------------------------------------------
+
+---> Types of testing
+
+	1) Functional Types
+
+	- Unit testing
+	- Component testing
+	- Integration testing
+	- Functional testing
+	- System testing
+	- Smoke / Sanity Testing
+	- UAT ( User Acceptance Testing)
+		- Alpha Testing
+		- Beta Testing
+	( All the above areas which are automated, except UNIT TESTING is called Automation Testing )
+
+	2) Non-functional Types
+
+	- Performance testing
+		- Load testing
+		- Stress testing
+		- Volume testing
+	- Endurance testing
+	- Usability testing
+	- Scalability testing
+	- Configuration testing
+	- Compatible testing
+	- Security testing
+
+	3) Maintainance Types
+
+	- Regression testing
+	- Maintainance testing
+
+-------------------------------------------------------------------------------------------------------------------------------------
+
+---> Widely used tools
+
+- Jira
+- Jmeter
+- LoadRunner
+
+-------------------------------------------------------------------------------------------------------------------------------------
