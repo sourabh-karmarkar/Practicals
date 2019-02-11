@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <style>
+            #logo_microsoft
+            {
+                position: absolute;
+                top: 20%;
+                right: 10%;
+            }
+            #logo_toyota
+            {
+                position: absolute;
+                top: 40%;
+                right: 10%;
+            }
+            #logo_cocacola
+            {
+                position: absolute;
+                top: 70%;
+                right: 10%;
+            }
+        </style>
+    </head>
+    <body>
+        <h2>My First Page</h2>
+        <p id="demo"></p>
+        <div id="logo_microsoft">
+            <img height=60>
+        </div>
+        <div id="logo_toyota">
+                <img height=100>
+        </div>
+        <div id="logo_cocacola">
+                <img height=60>
+        </div>
+        <button onclick="changeBackground()" id="changeBackgroundColor">green background</button>
+        <button onclick="loadMicrosoftLogo()" id="microsoftLogo">Microsoft</button>
+        <button onclick="loadToyotaLogo()" id="toyotaLogo">Toyota</button>
+        <button onclick="loadCocaColaLogo()" id="cocacolaLogo">Coca Cola</button>
+        <script>
+            
+            document.getElementById("demo").innerHTML = "Hello Sourabh"
+
+            var mflag = 0
+            var cflag = 0
+            var tflag = 0
+            var background_flag = 0
+
+            function loadMicrosoftLogo()
+            {
+                var img_tag = document.getElementById("logo_microsoft").children
+                if(mflag == 0)
+                {
+                    img_tag[0].src = "Logos/Logo_Microsoft.png"
+                    mflag = 1
+                }
+                else
+                {
+                    img_tag[0].removeAttribute("src");
+                    mflag = 0
+                }
+            }
+
+            function loadToyotaLogo()
+            {
+                var img_tag = document.getElementById("logo_toyota").children
+                if(tflag == 0)
+                {
+                    img_tag[0].src = "Logos/Logo_Toyota.jpg"
+                    tflag = 1
+                }
+                else
+                {
+                    img_tag[0].removeAttribute("src");
+                    tflag = 0
+                }
+            }
+
+            function loadCocaColaLogo()
+            {
+                var img_tag = document.getElementById("logo_cocacola").children
+                if(cflag == 0)
+                {
+                    img_tag[0].src = "Logos/Logo_CocaCola.png"
+                    cflag = 1
+                }
+                else
+                {
+                    img_tag[0].removeAttribute("src");
+                    cflag = 0
+                }
+            }
+
+
+            function changeBackground()
+            {
+                if(background_flag == 0)
+                {
+                    document.body.style.backgroundColor = "#AEF461"
+                    background_flag = 1
+                }
+                else
+                {
+                    document.body.style.backgroundColor = "white"
+                    background_flag = 0
+                }
+            }
+            
+
+        </script>
+    </body>
+</html>

@@ -56,3 +56,106 @@
 - LoadRunner
 
 -------------------------------------------------------------------------------------------------------------------------------------
+
+---> Testing Techniques
+
+- Boundary Value Analysis (BVA)
+- Equivalence Partition (EP)
+- Decision Table Testing (Cause-Effect Graphing)
+- State Transition Technique (Truth Table)
+- Error Guessing Technique
+
+-------------------------------------------------------------------------------------------------------------------------------------
+
+---> Defects
+
+- A mistake in coding is caled Error.
+- Error found by tester is called Defect.
+- Defect accepted by development teeam then it is called Bug.
+- Build does not meet the requirements then it is Failure.
+
+---> Severity vs Priority
+
+	1) Severity - Seriousness of defect with respect to functionality.
+
+		a) Critical - Defect affects critical functionality or critical data. It does not have a workaround.
+		b) Major - Defect affects major functionality or major data. It has workaround but it not obvious and is difficult.
+		c) Minor - Defect affects minor functionality or non-critical data. It as an easy workaround.
+		d) Trivial - Defect does not affect functionality or data. It does not even need a workaround. It does not impact productivity or efficiency.
+
+	2) Priority - Importance of defect with respect to customer.
+
+		a) Urgent
+		b) High
+		c) Medium
+		d) Low
+
+---> Fields in Defect Report
+
+- Defect ID
+- Description
+- Defect Type (functional, non-functional, security, performance)
+- Feature
+- Test Case Name
+- Steps to reproduce
+- Actual Result
+- Expected Result
+- Attachment
+- Status
+- Severity
+- Priority
+- Reported by
+- Assigned to
+- Build version
+- Resolved by
+- Resolved on
+- Resolution type
+
+---> Defect Management Tools
+
+- bugzilla
+- backlog
+- ALM
+- jira
+- mantis bug tracker
+- plutora
+- trac
+
+-------------------------------------------------------------------------------------------------------------------------------------
+
+---> Test Plan Outline
+
+- Purpose
+- Features to be tested
+- Features not to be tested
+- Approach
+- Suspension Criteria and Resumption Requirements.
+- Environmental Needs
+- Schedule
+- Acceptance Criteria
+- Roles and Responsibilities
+
+-------------------------------------------------------------------------------------------------------------------------------------
+
+---> Test Strategy
+
+	- Test Strategy is a high level document which defines the approach for software testing.
+
+	Test Strategy contains :
+
+		- Scope and Objective
+		- Business Issues
+		- Testing Approach
+		- Test Deliverables
+		- Defect Tracking Approach
+		- Training
+		- Automation
+		- Risks
+
+-------------------------------------------------------------------------------------------------------------------------------------
+
+---> Traceability Matrix
+
+It is used to trace the requirements to the tests that are needed to verify whether the requirements are fulfilled.
+
+-------------------------------------------------------------------------------------------------------------------------------------
