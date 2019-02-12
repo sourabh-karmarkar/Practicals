@@ -1,0 +1,51 @@
+----------------------------------------------------------------------------------------------------------------------
+
+													SELENIUM
+
+----------------------------------------------------------------------------------------------------------------------
+
+https://github.com/mozilla/geckodriver/releases
+https://www.guru99.com/first-webdriver-script.html
+
+----------------------------------------------------------------------------------------------------------------------
+
+Download the selenium standalone server and ChromeDriver from
+---> https://www.seleniumhq.org/download/
+
+Add the selenium standalone server to the eclipse java project as build path.
+
+Copy the below code and then change 2nd parameter of setProperty method to the path location where
+Chrome Driver is situated.
+
+---------------------------------------------------------------------------------------------------------
+
+package newproject;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.chrome.ChromeDriver;
+
+public class PG1 {
+
+    public static void main(String[] args) {
+    	
+		System.setProperty("webdriver.chrome.driver","/home/synerzip/Downloads/chromedriver");
+		WebDriver driver = new ChromeDriver();
+        String baseUrl = "http://demo.guru99.com/test/newtours/";
+        String expectedTitle = "Welcome: Mercury Tours";
+        String actualTitle = "";
+
+        driver.get(baseUrl);
+        
+        actualTitle = driver.getTitle();
+        System.out.println(driver.getTitle());
+
+        if (actualTitle.contentEquals(expectedTitle)){
+            System.out.println("Test Passed!");
+        } else {
+            System.out.println("Test Failed");
+        }
+
+        driver.close();  
+    }
+}
+
+---------------------------------------------------------------------------------------------------------

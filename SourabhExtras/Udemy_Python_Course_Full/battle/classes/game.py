@@ -13,7 +13,7 @@ class bcolors:
 
 
 class Person:
-    def __init__(self, hp, mp, atk, df, magic):
+    def __init__(self, name, hp, mp, atk, df, magic, items):
         self.maxhp = hp
         self.hp = hp
         self.maxmp = mp
@@ -22,21 +22,23 @@ class Person:
         self.atkh = atk + 10
         self.df = df
         self.magic = magic
-        self.actions = ["Attack", "Magic"]
+        self.items = items
+        self.actions = ["Attack", "Magic", "Items"]
+        self.name = name
 
     def generate_damage(self):
         return random.randrange(self.atkl, self.atkh)
-
-    def generate_spell_damage(self, i):
-        mgl = self.magic[i]["dmg"] - 5
-        mgh = self.magic[i]["dmg"] + 5
-        return random.randrange(mgl, mgh)
 
     def take_damage(self, dmg):
         self.hp -= dmg
         if self.hp < 0:
             self.hp = 0
         return self.hp
+
+    def heal(self, dmg):
+        self.hp += dmg
+        if self.hp > self.maxhp:
+            self.hp = self.maxhp
 
     def get_hp(self):
         return self.hp
@@ -53,20 +55,34 @@ class Person:
     def reduce_mp(self, cost):
         self.mp -= cost
 
-    def get_spell_name(self, i):
-        return self.magic[i]["name"]
-
-    def get_spell_mp_cost(self, i):
-        return self.magic[i]["cost"]
-
     def choose_action(self):
         i = 1
+
+        print("\n" + "    " + bcolors.BOLD + self.name + bcolors.ENDC)
+        print(bcolors.OKBLUE + bcolors.BOLD + "    Actions : " + bcolors.ENDC)
         for item in self.actions:
-            print(str(i) + "i", item)
+            print("        " + str(i) + ".", item)
             i += 1
 
     def choose_magic(self):
         i = 1
+
+        print("\n" + bcolors.OKBLUE + bcolors.BOLD + "    Magic : " + bcolors.ENDC)
         for spell in self.magic:
-            print(str(i) + "i", spell["name"],"(cost:", str(spell["mp"]) + ")")
+            print("        " + str(i) + ".", spell.name, "(cost :", str(spell.cost) + ")")
             i += 1
+
+    def choose_item(self):
+        i = 1
+
+        print("\n" + bcolors.OKGREEN + bcolors.BOLD + "    ITEMS : " + bcolors.ENDC)
+        for item in self.items:
+            print("        " + str(i) + ".", item["item"].name, ":", item["item"].description, " (x" + str(item["quantity"]) + ")")
+            i += 1
+
+    def get_stats(self):
+        print("                         _________________________          __________")
+        print(bcolors.BOLD + self.name + "        " +
+              str(self.hp) + "/" + str(self.maxhp) + " |" + bcolors.OKGREEN + "████████████             " + bcolors.ENDC + bcolors.BOLD
+              + "|  " +
+              str(self.mp) + "/" + str(self.maxmp) + " |" + bcolors.OKBLUE + "██████████" + bcolors.ENDC + "|")

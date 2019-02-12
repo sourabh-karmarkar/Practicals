@@ -54,6 +54,7 @@
 - Jira
 - Jmeter
 - LoadRunner
+- Cucumber
 
 -------------------------------------------------------------------------------------------------------------------------------------
 
@@ -157,5 +158,21 @@
 ---> Traceability Matrix
 
 It is used to trace the requirements to the tests that are needed to verify whether the requirements are fulfilled.
+
+-------------------------------------------------------------------------------------------------------------------------------------
+
+---> Automation
+
+Automation is the technology by which a process or procedure is performed with minimum human assistance.
+
+---> Steps of Automation Process
+
+- Test tool selection
+- Define scope of Automation
+- Planning, Design and Development
+- Test Execution
+- Maintainence
+
+---> Automation Tool : Cucumber ( https://cucumber.io/ )
 
 -------------------------------------------------------------------------------------------------------------------------------------
