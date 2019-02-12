@@ -8,7 +8,7 @@ import org.openqa.selenium.interactions.Actions;
 
 public class FacebookLogin {
     public static void main(String args[]){
-    	System.setProperty("webdriver.chrome.driver","/home/synerzip/Downloads/chromedriver");
+		System.setProperty("webdriver.chrome.driver","/home/synerzip/Downloads/Software_Setups/chromedriver");
         WebDriver driver = new ChromeDriver();
         driver.get("http://www.facebook.com");
         WebElement email= driver.findElement(By.id("email"));

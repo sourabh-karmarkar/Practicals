@@ -9,7 +9,7 @@ import org.openqa.selenium.interactions.Actions;
 
 public class GoogleSearch {
     public static void main(String args[]){
-    	System.setProperty("webdriver.chrome.driver","/home/synerzip/Downloads/chromedriver");
+		System.setProperty("webdriver.chrome.driver","/home/synerzip/Downloads/Software_Setups/chromedriver");
         WebDriver driver = new ChromeDriver();
         driver.get("http://www.google.com");
         WebElement searchKey = driver.findElement(By.name("q"));

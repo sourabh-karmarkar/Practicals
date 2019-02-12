@@ -12,7 +12,7 @@ public class PG1 {
     public static void main(String[] args) {
         // declaration and instantiation of objects/variables
     	
-		System.setProperty("webdriver.chrome.driver","/home/synerzip/Downloads/chromedriver");
+		System.setProperty("webdriver.chrome.driver","/home/synerzip/Downloads/Software_Setups/chromedriver");
 		WebDriver driver = new ChromeDriver();
 		driver.manage().window().maximize(); 
         String baseUrl = "http://demo.guru99.com/test/newtours/";

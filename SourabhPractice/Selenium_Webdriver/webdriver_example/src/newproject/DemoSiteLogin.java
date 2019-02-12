@@ -17,7 +17,7 @@ public class DemoSiteLogin {
 
     public static void main(String[] args) {
     	
-		System.setProperty("webdriver.chrome.driver","/home/synerzip/Downloads/chromedriver");
+		System.setProperty("webdriver.chrome.driver","/home/synerzip/Downloads/Software_Setups/chromedriver");
 		WebDriver driver = new ChromeDriver();
 		driver.manage().window().maximize(); 
         String baseUrl = "http://php.thedemosite.co.uk/login.php";
