@@ -3,8 +3,6 @@
 **/.ipynb_checkpoints/**/*
 **/data/**/*
 **/venv/**/*
-**/.idea/**/*
-**/__pycache__/**/*
 
 # Ignoring eclipse project related files and folders
 **/.classpath
