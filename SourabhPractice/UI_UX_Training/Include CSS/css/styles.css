@@ -1,0 +1,50 @@
+/*
+* {
+    color:#ffc60b;
+}
+*/
+
+p {
+    color: red;
+}
+
+.mango-desc {
+    background-color: #ffc60b;
+    color:green; 
+}
+
+#para {
+    color:blue;
+}
+
+/* Child Selectpr */
+div > p {
+    color: #009f9d;
+    font-style: italic;
+}
+
+/* Sibling Selector */
+div + p {
+    color: #a9651a;
+    font-style: normal;
+}
+
+a[title] {
+    color: aqua;
+    font-weight: bold;
+}
+
+a:hover {
+    color: antiquewhite;
+    font-size: 10px;
+}
+
+p::before {
+    content: '$$$';
+    display: inline-block;
+}
+
+p::after {
+    content: '###';
+    display: inline-block;
+}

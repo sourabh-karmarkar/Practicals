@@ -1,0 +1,114 @@
+body {
+    text-align: center;
+}
+
+h1 {
+    color: orange;
+}
+
+.name_designation {
+    width: 60%;
+    color: orange;
+    text-align: center;
+    display: inline-block;
+    position: relative;
+}
+
+.name_designation .cloud1 {
+    position: absolute;
+    top: 0%;
+    right: 0%;
+}
+
+.name_designation .cloud2 {
+    position: absolute;
+    left: 0%;
+    bottom: 0%;
+}
+
+.div1 .mountain {
+    height : 30%;
+    width : 30%;
+}
+
+.div2 {
+    margin-bottom:8%;
+    margin-top:5%;
+}
+
+.div2 .div2_photo .girl_photo {
+    height: 12%;
+    width : 12%;
+    margin-top: 4%;
+    border-radius: 50%;
+}
+
+.div2 .div2_description {
+    width : 30%;
+    text-align: center;
+    display: inline-block;
+}
+
+.div3 .div3_block1 {
+    display: inline-block;
+    width : 50%;
+    text-align: left;
+}
+
+.div3 .div3_block1 .laptop_heading {
+    font-size: 100%;
+}
+
+.div3 .div3_block1 .laptop {
+    float : left;
+    height : 27%;
+    width : 27%;
+    padding-right: 4%;
+}
+
+.div3 .div3_block2 {
+    display: inline-block;
+    width : 50%;
+    text-align: left;
+    padding-top: 3%;
+}
+
+.div3 .div3_block2 .hiking_heading {
+    font-size: 100%;
+}
+
+.div3 .div3_block2 .hiking {
+    float : right;
+    height : 27%;
+    width : 27%;
+    padding-right: 4%;
+}
+
+.div4 {
+    width: 100%;
+    padding-bottom: 7%;
+    padding-top: 8%;
+    width:45%;
+    display: inline-block;
+}
+
+.div4 .contact_heading {
+    font-size: 100%;
+}
+
+.div4 .contact_button {
+    background-color: #ffd633;
+    background-image: linear-gradient( #ffd633, #e6b800);
+    padding: 7px 15px;
+    border: none;
+    border-radius: 6px;
+    color:#fff;
+    font-size: 16px;
+}
+
+.div5 {
+    background-color: #ff9900;
+    width : 100%;
+    height : 20%;
+    padding-top: 7%;
+}
