@@ -1,0 +1,34 @@
+#top-gradient {
+  height: 10rem;
+  background-color: #3a0088; /* For browsers that do not support gradients */
+  background-image: linear-gradient( #3a0088 , #e61c5d); /* Standard syntax (must be last) */
+}
+
+#left-gradient {
+  height: 10rem;
+  background-color: #3a0088;
+  background-image: linear-gradient(to right,
+      red, orange, yellow, green, blue, indigo, violet);
+  margin-top: 30px;
+}
+
+#diagonal-gradient {
+  height: 10rem;
+  background-color: #fa86be;
+  background-image: linear-gradient(to bottom right, #fa86be , #a275e3);
+  margin-top: 30px;
+}
+
+#angle-gradient {
+  height: 10rem;
+  background-color: #ef6c57;
+ background-image: linear-gradient(-120deg, #ef6c57, #f3a333, #e61c5d, #7ed3b2);
+  margin-top: 30px;
+}
+
+#radial-gradient {
+  height: 10rem;
+  background-color: #fe9191;
+ background-image: radial-gradient(farthest-side at 65% 55%, #fe9191, #e4406f, #ca2374, #9c297f);
+  margin-top: 30px;
+}

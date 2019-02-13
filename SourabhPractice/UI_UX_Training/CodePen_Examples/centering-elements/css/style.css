@@ -1,0 +1,45 @@
+/* Centering line of text */
+.p-line {
+  text-align: center;
+  background-color:#ff8162; 
+}
+
+/* Centering block or image */
+.p-block {
+  width: 20rem;
+  margin: 50px auto;
+  background-color: #fed9ca;
+}
+
+img.apple {
+  display: block;
+  margin: 50px auto;
+}
+
+/* Vertically center */
+div.container {
+  height: 10em;
+  position: relative;
+  background-color: #ffcd60;
+}
+div.container p{
+  margin: 0;
+  position: absolute;
+  top: 50%;
+  transform: translate(0, -50%);
+}
+
+/* Horizontal & Vertical center */
+div.container1 {
+  margin: 30px 0;
+  height: 10em;
+  position: relative;
+  background-color: #a7d7c5;
+}
+div.container1 p{
+  margin: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}

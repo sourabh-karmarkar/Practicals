@@ -1,0 +1,14 @@
+p {
+  background-color: red;
+  width: 100px;
+  display:inline-block;
+}
+span {
+  background-color: blue;
+  width: 100px;
+}
+
+.second-p {
+  display: none;
+  visibility: hidden;
+}

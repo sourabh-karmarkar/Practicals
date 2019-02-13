@@ -1,0 +1,31 @@
+body{margin:0;}
+.container {
+  height:300px;
+  width:300px;
+  background-color:gray;
+}
+.red{
+  height:100px;
+  width:100px;
+  background-color: red;
+  display:inline-block;
+  position:absolute;
+  left:200px;
+  top:200px;
+}
+.yellow{
+  height:100px;
+  width:100px;
+  background-color: yellow;
+  display:inline-block;
+  position:absolute;
+  left:100px;
+  top:100px;
+}
+.blue{
+  height:100px;
+  width:100px;
+  background-color: blue;
+  display:inline-block;
+  position:absolute;
+}

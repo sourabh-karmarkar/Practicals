@@ -1,0 +1,58 @@
+.container {
+  position: relative;
+  height: 20em;
+}
+.strawberry {
+  margin: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+/* Translate */
+.translate {
+  transform: translate(150px, 100px);
+}
+
+/* Rotate */
+.rotate {
+  transform: rotate(60deg);
+}
+
+/* Scale */
+.scale {
+  transform: scale(0.2, 0.3);
+}
+
+/* SkewX */
+.skewX {
+  transform: skewX(20deg);
+}
+
+/* SkewY */
+.skewY {
+  transform: skewY(20deg);
+}
+
+/* Skew */
+.skew {
+  transform: skew(20deg);
+}
+
+/* Matrix 
+matrix(scaleX(),skewY(),skewX(),scaleY(),translateX(),translateY())
+*/
+.matrix {
+  transform: matrix(1, 0, 0.5, 2, 150, 0);
+}
+
+/* Rotate 3D */
+.rotateX {
+  transform: rotateX(150deg);
+}
+.rotateY {
+  transform: rotateY(150deg);
+}
+.rotateZ {
+  transform: rotateZ(60deg);
+}

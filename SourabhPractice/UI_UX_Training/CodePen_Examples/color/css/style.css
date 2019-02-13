@@ -1,0 +1,9 @@
+.color-keyword { color: blue; }
+.color-hex { color: #0000ff; }
+.color-hex-short { color: #00f; }
+.color-rgbp { color: rgb(0%,0%,100%); }
+.color-rgb { color: rgb(0,0,255); }
+.color-rgba { color: rgba(0,0,255,0.5); }
+.color-hsl { color: hsl(120, 100%, 25%); }
+.color-hsla { color: hsl(120, 100%, 25%, 0.5); }
+.color-opacity {color: #ff0000; opacity:0.3;}
