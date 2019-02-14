@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Static Page Layout</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <style>
+	.container1 {
+		width : 960px;
+		margin: 20px auto;
+	}
+	img { height : 300px; 
+		width: 960px;}
+	.section1 {
+		float: left;
+		width : 600px;
+		padding: 10px;
+		box-sizing : border-box;
+		background-color: #9ACD32;
+	}
+	.section2 {
+		float: left;
+		width : 360px;
+		padding: 10px;
+		box-sizing : border-box;
+		background-color: orange;
+	}
+	
+	/* @media (max-width : 959px) {
+		.container1 {
+			width : 100%;
+		}
+		.section1 {
+			width : 70%;
+		}
+		.section2 {
+			width : 30%;
+		}
+		img {
+			width : 100%;
+		}
+	}
+	
+	@media (max-width : 767px) {
+		.section1 {
+			width : 50%;
+		}
+		.section2 {
+			width : 50%;
+		}
+		
+	}
+	
+	@media (max-width : 640px) {
+		.section1 {
+			width : 100%;
+			margin-bottom : 5px;
+		}
+		.section2 {
+			width : 100%;
+		}
+	}
+	
+	@media (max-width: 320px) {
+		.container1 {
+			width : 320px;
+		}
+	} */
+
+	
+  </style>
+</head>
+<body>
+	<div class="container1">
+		<div class="banner-image">
+			<img src="./banner-image.jpg">
+		</div>
+		<div class="section1">
+			<p>Section 1</p>
+			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aperiam dolore repellendus veniam consequatur vero numquam
+      voluptatem quam ab expedita eum, ipsam? Necessitatibus dicta quaerat, vitae dolorum, dolor autem reiciendis sapiente.</p>
+		</div>
+		<div class="section2">
+			<p>Section 2</p>
+			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aperiam dolore repellendus veniam consequatur vero numquam
+      voluptatem quam ab expedita eum, ipsam? Necessitatibus dicta quaerat, vitae dolorum, dolor autem reiciendis sapiente.</p>
+		</div>
+	</div>
+	
+</body>
+</html>
