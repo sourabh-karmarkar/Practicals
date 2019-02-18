@@ -10,14 +10,17 @@ class UsersController < ApplicationController
   
   def new
     @user = User.new
+    @events = Event.all
   end
   
   def edit
+    @events = Event.all
   end
 
   def create
+    @events = Event.all
     @user = User.new(user_params)
-
+    
     respond_to do |format|
       if @user.save
         format.html { redirect_to @user, notice: 'Event was successfully created.' }
@@ -30,6 +33,7 @@ class UsersController < ApplicationController
   end
 
   def update
+    @events = Event.all
     respond_to do |format|
       if @user.update(user_params)
         format.html { redirect_to @user, notice: 'Event was successfully updated.' }
@@ -55,6 +59,6 @@ class UsersController < ApplicationController
     end
 
     def user_params
-      params.require(:user).permit(:first_name, :last_name)
+      params.require(:user).permit(:first_name, :last_name, :event_id)
     end
 end

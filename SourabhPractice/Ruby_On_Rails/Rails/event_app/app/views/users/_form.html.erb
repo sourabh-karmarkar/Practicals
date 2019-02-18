@@ -12,6 +12,11 @@
   <% end %>
 
   <div class="field">
+    <%= form.label :Event_ID %>
+    <%= form.select :event_id, options_from_collection_for_select(Event.all, "id", "title")%>
+  </div>
+
+  <div class="field">
     <%= form.label :FirstName %>
     <%= form.text_field :first_name %>
   </div>
