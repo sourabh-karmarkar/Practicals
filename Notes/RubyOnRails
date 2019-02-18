@@ -1,0 +1,93 @@
+------------------------------------------------------------------------------------------------------------------------------
+
+												Ruby On Rails
+
+------------------------------------------------------------------------------------------------------------------------------
+
+---> Some important links
+
+https://gorails.com/
+http://iwanttolearnruby.com/
+https://ruby-doc.org/
+
+---> Installation on Ubuntu
+
+https://gorails.com/setup/ubuntu/18.04
+
+------------------------------------------------------------------------------------------------------------------------------
+
+---> Data Types
+
+- Integer
+- Float
+- String
+- Boolean
+- Array
+- Hash
+- Range
+
+---> Variables
+
+- Local Variable
+- Global Variable
+- Class Variable
+- Instance Variable
+- CONSTANT
+
+---> Loops
+
+- each_with_index
+- collect
+- select
+- reject
+- inject
+- upto
+- downto
+
+------------------------------------------------------------------------------------------------------------------------------
+
+---> Open interactive ruby mode
+
+Type "irb" on the terminal
+
+---> Simple Hello World
+
+- make a file hello.rb
+- add line ---> puts "Hello"
+- then to execute the file, type "ruby hello.rb"
+
+------------------------------------------------------------------------------------------------------------------------------
+
+---> Class
+
+class ClassName
+  def initialize
+    //statements
+  end
+  def self.method_name
+    //statements
+  end
+  def method_name
+    //statements
+  end
+end
+
+------------------------------------------------------------------------------------------------------------------------------
+
+Rails application folder structure
+
+a) App - contains Model, View, Controller, Assets, helper, Mailer
+b) Bin - contains code to start, setup, update, deploy and run
+c) Config - routes, database and other configurations
+d) Config.ru - rack configuration to start rack based application
+e) Db - database migration files
+f) Gemfile/Gemfile.lock - gem dependencies required for application
+g) Lib - extended modules
+h) Log - application log
+i) Public - static files
+j) Rakefile - load task that can be run from command line
+k) Test - contains unit testing code
+l) Tmp - temporary files
+m) Vendor - third party code
+
+------------------------------------------------------------------------------------------------------------------------------
