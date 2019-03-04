@@ -4,7 +4,8 @@ import Login from './components/Login';
 import { BrowserRouter, Route } from "react-router-dom";
 import { connect } from "react-redux";
 import login from "./actions/loginAction";
-import PrimarySearchAppBar from './components/Dashboard/AppBarAdmin';
+import addemployee from "./actions/addEmployeeAction";
+import AppBarAdmin from './components/Dashboard/AppBarAdmin';
 
 const styles = {
   root: {
@@ -33,7 +34,7 @@ class App extends Component {
             height: "100%",
             backgroundColor: "#9FF9F5"
           }}>
-          <Route path="/dashboard" render={props => <PrimarySearchAppBar/>} />
+          <Route path="/dashboard/" render={props => <AppBarAdmin {...props} {...this.props}/>} />
           <Route path="/login" render={props => <Login {...props} {...this.props} />} />
         </div>
       </BrowserRouter>
@@ -43,10 +44,12 @@ class App extends Component {
 
 const mapStateToProps = state => ({
   loginRequested:state.loginRequested,
+  employeeAddFlag:state.employeeAddFlag
 });
 
 const mapDispatchToProps = dispatch => ({
-  login: user => dispatch(login(user))
+  login: user => dispatch(login(user)),
+  addemployee : employee => dispatch(addemployee(employee))
 });
 
 export default connect(

@@ -1,5 +1,6 @@
 const initialState = {
     loginRequested: false,
+    employeeAddFlag : false
 };
 
 const userLogin = (state = initialState, action) => 
@@ -8,6 +9,8 @@ const userLogin = (state = initialState, action) =>
     {
         case "LOGIN_REQUESTED":
             return { loginRequested: true };
+        case "ADD_EMPLOYEE":
+            return { employeeAddFlag: true };
         default:
             return state;
     }

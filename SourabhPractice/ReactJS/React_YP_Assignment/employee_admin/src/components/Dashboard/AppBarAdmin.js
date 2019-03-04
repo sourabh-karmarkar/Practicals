@@ -16,11 +16,15 @@ import AccountCircle from '@material-ui/icons/AccountCircle';
 import MailIcon from '@material-ui/icons/Mail';
 import NotificationsIcon from '@material-ui/icons/Notifications';
 import MoreIcon from '@material-ui/icons/MoreVert';
-import SidePanelAdmin from './SidePanelAdmin';
+import EmployeeCountPaper from './EmployeeCountPaper';
+import SidePanelPaper from './SidePanelPaper';
+import EmployeePaper from './EmployeePaper';
+import Grid from '@material-ui/core/Grid';
 
 const styles = theme => ({
   root: {
     width: '100%',
+    display:'grid',
   },
   grow: {
     flexGrow: 1,
@@ -28,6 +32,12 @@ const styles = theme => ({
   menuButton: {
     marginLeft: -12,
     marginRight: 20,
+  },
+  bodygridcontainer:{
+    height: '100%',
+  },
+  searchBarHolder:{
+    display:'grid',
   },
   title: {
     display: 'none',
@@ -164,6 +174,7 @@ class PrimarySearchAppBar extends React.Component {
     );
 
     return (
+      <>
       <div className={classes.root}>
         <div>
           <AppBar position="static">
@@ -172,7 +183,7 @@ class PrimarySearchAppBar extends React.Component {
                 <MenuIcon />
               </IconButton>
               <Typography className={classes.title} variant="h6" color="inherit" noWrap>
-                Material-UI
+                Dashboard
               </Typography>
               <div className={classes.search}>
                 <div className={classes.searchIcon}>
@@ -217,8 +228,15 @@ class PrimarySearchAppBar extends React.Component {
           {renderMenu}
           {renderMobileMenu}
         </div>
-        <div><SidePanelAdmin/></div>
+        <div>
+          <EmployeeCountPaper/>
+        </div>
       </div>
+      <Grid className={classes.bodygridcontainer} container spacing={1}>
+        <SidePanelPaper addemployee ={this.props.addemployee}/>
+        <EmployeePaper employeeAddFlag = {this.props.employeeAddFlag}/>
+      </Grid>
+      </>
     );
   }
 }

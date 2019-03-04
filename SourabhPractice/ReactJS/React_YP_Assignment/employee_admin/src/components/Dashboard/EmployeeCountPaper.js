@@ -12,25 +12,22 @@ const styles = theme => ({
   },
 });
 
-function SidePanelAdmin(props) {
+function EmployeeCountPaper(props) {
   const { classes } = props;
 
   return (
     <div>
       <Paper className={classes.root} elevation={5}>
         <Typography variant="h5" component="h3">
-          This is a sheet of paper.
-        </Typography>
-        <Typography component="p">
-          Paper can be used to build surface or other elements for your application.
+          Employee Count : 
         </Typography>
       </Paper>
     </div>
   );
 }
 
-SidePanelAdmin.propTypes = {
+EmployeeCountPaper.propTypes = {
   classes: PropTypes.object.isRequired,
 };
 
-export default withStyles(styles)(SidePanelAdmin);
+export default withStyles(styles)(EmployeeCountPaper);
