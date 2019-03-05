@@ -17,9 +17,7 @@ const styles = theme => ({
     width: "100%",
   },
   paperaddholder:{
-      height:"100%",
-      justifyItems:"center",
-      width:"auto",
+      width:"100%",
   },
   addemptypo:{
       margin:"2%",
@@ -68,7 +66,7 @@ export class AddEmployee extends Component {
   render() {
     const { classes } = this.props;
     return (
-        <Paper>
+        <Paper className={classes.paperaddholder}>
             <Typography className={classes.addemptypo} variant="h5" component="h3">
             Add Employee
             </Typography>
