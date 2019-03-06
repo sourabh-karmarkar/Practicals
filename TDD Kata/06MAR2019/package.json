@@ -1,0 +1,14 @@
+{
+  "name": "06mar2019",
+  "version": "1.0.0",
+  "description": "",
+  "main": "PrimeFactor.js",
+  "scripts": {
+    "test": "jest"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "jest": "^24.1.0"
+  }
+}
