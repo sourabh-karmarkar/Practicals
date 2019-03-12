@@ -1,6 +1,6 @@
 ------------------------------------------------------------------------------------------------------------------------------
 
-										AUTOMATION TESTING TOOLS
+											AUTOMATION TESTING TOOLS
 
 ------------------------------------------------------------------------------------------------------------------------------
 
@@ -9,11 +9,20 @@
 https://medium.com/@anephenix/end-to-end-testing-single-page-apps-and-node-js-apis-with-cucumber-js-and-puppeteer-ad5a519ace0
 https://github.com/spirosikmd/cucumber-puppeteer-example
 
----> Cucumber
+------------------------------------------------------------------------------------------------------------------------------
+
+---> CucumberJS
 
 https://docs.cucumber.io/
 https://cucumber.io/
 https://docs.cucumber.io/guides/
+https://docs.cucumber.io/guides/10-minute-tutorial/
+
+---> Installation
+
+npm install --save-dev cucumber
+
+------------------------------------------------------------------------------------------------------------------------------
 
 ---> Puppeteer
 
