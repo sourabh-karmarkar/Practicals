@@ -2,6 +2,8 @@
 **/package-lock.json/**/*
 **/.env/**/*
 **/.ipynb_checkpoints/**/*
+**/.idea/**/*
+**/__pycache__/**/*
 **/data/**/*
 **/venv/**/*
 
