@@ -41,6 +41,12 @@ git pull "local_branch" "remote_branch"
 
 --------------------------------------------------------------------------------------------------------------------------
 
+---> Renaming a branch (You should be on the branch which you want to rename)
+
+git branch -m <oldname> <newname>\
+
+--------------------------------------------------------------------------------------------------------------------------
+
 git push origin "local branch name":"remote branch name"
 
 create pull request on github
