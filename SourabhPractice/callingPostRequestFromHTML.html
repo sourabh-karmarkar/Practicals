@@ -1,0 +1,408 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>My page</title>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="minimum-scale=1, initial-scale=1, width=device-width, shrink-to-fit=no"
+    />
+    <script
+      src="https://unpkg.com/react@latest/umd/react.development.js"
+      crossorigin="anonymous"
+    ></script>
+    <script src="https://unpkg.com/react-dom@latest/umd/react-dom.development.js"></script>
+    <script
+      src="https://unpkg.com/@material-ui/core@4.1.0/umd/material-ui.production.min.js"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://unpkg.com/babel-standalone@latest/babel.min.js"
+      crossorigin="anonymous"
+    ></script>
+    <!-- Fonts to support Material Design -->
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css?family=Montserrat:300,400,500,700&display=swap"
+    />
+    <!-- Icons to support Material Design -->
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+    />
+  </head>
+  <body>
+    <div id="root"></div>
+    <script type="text/babel">
+      const {
+        colors,
+        CssBaseline,
+        MuiThemeProvider,
+        Typography,
+        Container,
+        makeStyles,
+        createMuiTheme,
+        Box,
+        SvgIcon,
+        Link,
+        Component,
+        Grid,
+        Paper,
+        TextField,
+        Button,
+        InputAdornment,
+        IconButton
+      } = MaterialUI;
+      function Visibility(props) {
+        return (
+          <SvgIcon {...props}>
+            <path d="M12 4.5C7 4.5 2.73 7.61 1 12c1.73 4.39 6 7.5 11 7.5s9.27-3.11 11-7.5c-1.73-4.39-6-7.5-11-7.5zM12 17c-2.76 0-5-2.24-5-5s2.24-5 5-5 5 2.24 5 5-2.24 5-5 5zm0-8c-1.66 0-3 1.34-3 3s1.34 3 3 3 3-1.34 3-3-1.34-3-3-3z" />
+          </SvgIcon>
+        );
+      }
+      function VisibilityOff(props) {
+        return (
+          <SvgIcon {...props}>
+            <path d="M12 7c2.76 0 5 2.24 5 5 0 .65-.13 1.26-.36 1.83l2.92 2.92c1.51-1.26 2.7-2.89 3.43-4.75-1.73-4.39-6-7.5-11-7.5-1.4 0-2.74.25-3.98.7l2.16 2.16C10.74 7.13 11.35 7 12 7zM2 4.27l2.28 2.28.46.46C3.08 8.3 1.78 10.02 1 12c1.73 4.39 6 7.5 11 7.5 1.55 0 3.03-.3 4.38-.84l.42.42L19.73 22 21 20.73 3.27 3 2 4.27zM7.53 9.8l1.55 1.55c-.05.21-.08.43-.08.65 0 1.66 1.34 3 3 3 .22 0 .44-.03.65-.08l1.55 1.55c-.67.33-1.41.53-2.2.53-2.76 0-5-2.24-5-5 0-.79.2-1.53.53-2.2zm4.31-.78l3.15 3.15.02-.16c0-1.66-1.34-3-3-3l-.17.01z" />
+          </SvgIcon>
+        );
+      }
+      // Create a theme instance.
+      const theme = createMuiTheme({
+        palette: {
+          primary: {
+            // light: will be calculated from palette.primary.main,
+            main: "#EEE4E1"
+            // dark: will be calculated from palette.primary.main,
+            // contrastText: will be calculated to contrast with palette.primary.main
+          },
+          text: {
+            primary: "#2CBA2A"
+          }
+        },
+        typography: {
+          fontFamily: ["Montserrat"].join(",")
+        }
+      });
+      const useStyles = makeStyles(theme => ({
+        paper: {
+          padding: theme.spacing.unit * 2,
+          textAlign: "center",
+          color: "white",
+          width: "100%",
+          [theme.breakpoints.up("sm")]: {
+            marginLeft: "6%",
+            marginTop: "6%",
+            backgroundColor: "#f5f5f0"
+          }
+        },
+        button: {
+          "&$disabled": {
+            background: "green"
+          },
+          margin: theme.spacing.unit,
+          paddingLeft: 20,
+          paddingRight: 20,
+          height: 46,
+          width: 216,
+          marginBottom: 30,
+          borderRadius: 23,
+          textTransform: "Capitalize",
+          background: "blue",
+          fontWeight: "bold",
+          whiteSpace: "nowrap"
+        },
+        disabled: {},
+        textField: {
+          marginLeft: theme.spacing.unit,
+          marginRight: theme.spacing.unit,
+          width: 300
+        },
+        imgStyle: {
+          [theme.breakpoints.down("xs")]: {
+            width: "100%",
+            height: "205px"
+          },
+          [theme.breakpoints.up("sm")]: {
+            width: "100%",
+            height: "205px"
+          }
+        },
+        title: {
+          fontWeight: "bold",
+          marginTop: "1em",
+          [theme.breakpoints.up("sm")]: {
+            marginLeft: "4em"
+          },
+          [theme.breakpoints.down("xs")]: {
+            marginLeft: "1.4em"
+          }
+        },
+        errorButton: {
+          "&:hover": {
+            backgroundColor: theme.palette.primary.main,
+            color: "white"
+          }
+        },
+        main: {
+          [theme.breakpoints.down("xs")]: {
+            width: "100%",
+            height: "100%",
+            backgroundColor: "white",
+            paddingTop: 60
+          },
+          [theme.breakpoints.up("sm")]: {
+            width: "100%",
+            backgroundColor: "white",
+            paddingTop: 120
+          }
+        }
+      }));
+      function SetPassword(props) {
+        const classes = useStyles();
+        return (
+          <div>
+            <div className={classes.root}>
+              <Grid container alignItems="center">
+                <Grid item xs={12} sm={6}>
+                  <img
+                    src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/48/GoogleMaps_logo.svg/1011px-GoogleMaps_logo.svg.png"
+                    className={classes.imgStyle}
+                  />
+                </Grid>
+                <Grid item xs={12} sm={6}>
+                  <Grid
+                    container
+                    spacing={24}
+                    direction="column"
+                    alignItems="center"
+                  >
+                    <Grid container item xs={12} alignSelf="end">
+                      <Typography
+                        gutterBottom
+                        variant="h6"
+                        component="h2"
+                        className={classes.title}
+                      >
+                        Signup
+                      </Typography>
+                    </Grid>
+                    <Grid item xs={12}>
+                      <TextField
+                        onChange={props.handleChange}
+                        value={props.fullname}
+                        name="fullname"
+                        required
+                        id="fullname"
+                        label="Full Name"
+                        className={classes.textField}
+                        margin="normal"
+                        InputLabelProps={{
+                          classes: {
+                            root: classes.cssLabel,
+                            focused: classes.cssFocused,
+                            underline: classes.cssUnderline
+                          }
+                        }}
+                        InputProps={{
+                          classes: {
+                            root: classes.cssOutlinedInput,
+                            focused: classes.cssFocused,
+                            underline: classes.cssUnderline
+                          }
+                        }}
+                      />
+                    </Grid>
+                    <Grid item xs={12}>
+                      <TextField
+                        onChange={props.handleChange}
+                        value={props.email}
+                        name="email"
+                        type="email"
+                        required
+                        id="email"
+                        label="Email"
+                        className={classes.textField}
+                        margin="normal"
+                        InputLabelProps={{
+                          classes: {
+                            root: classes.cssLabel,
+                            focused: classes.cssFocused,
+                            underline: classes.cssUnderline
+                          }
+                        }}
+                        InputProps={{
+                          classes: {
+                            root: classes.cssOutlinedInput,
+                            focused: classes.cssFocused,
+                            underline: classes.cssUnderline
+                          }
+                        }}
+                      />
+                    </Grid>
+                    <Grid item xs={12}>
+                      <TextField
+                        onChange={props.handleChange}
+                        value={props.password}
+                        name="password"
+                        type="password"
+                        required
+                        id="newPassword"
+                        label="Password"
+                        className={classes.textField}
+                        margin="normal"
+                        InputLabelProps={{
+                          classes: {
+                            root: classes.cssLabel,
+                            focused: classes.cssFocused,
+                            underline: classes.cssUnderline
+                          }
+                        }}
+                        InputProps={{
+                          classes: {
+                            root: classes.cssOutlinedInput,
+                            focused: classes.cssFocused,
+                            underline: classes.cssUnderline
+                          }
+                        }}
+                      />
+                    </Grid>
+                    <Button
+                      id="setPassword"
+                      type="button"
+                      variant="contained"
+                      color="primary"
+                      classes={{
+                        root: classes.button,
+                        disabled: classes.disabled
+                      }}
+                      className={classes.button}
+                      onClick={() => {
+                        sendResetFormData(
+                          props.fullname,
+                          props.email,
+                          props.password
+                        );
+                      }}
+                    >
+                      <Typography
+                        style={{
+                          color: "white",
+                          paddingLeft: 20,
+                          paddingRight: 20,
+                          textTransform: "capitalize",
+                          fontWeight: "bold"
+                        }}
+                      >
+                        Submit
+                      </Typography>
+                    </Button>
+                  </Grid>
+                </Grid>
+              </Grid>
+            </div>
+          </div>
+        );
+      }
+      class App extends React.Component {
+        constructor(props) {
+          super(props);
+          this.state = {
+            fullname: "",
+            email: "",
+            password: "",
+            passwordVisibility: false
+          };
+        }
+        handleChange = event => {
+          this.setState({ [event.target.name]: event.target.value });
+        };
+        handleClickShowPassword = () => {
+          this.setState({
+            passwordVisibility: !this.state.passwordVisibility
+          });
+        };
+        render() {
+          return (
+            <Container maxWidth="sm">
+              <div style={{ marginTop: 24 }}>
+                <Typography variant="h4" component="h1" gutterBottom>
+                  <SetPassword
+                    fullname={this.state.fullname}
+                    email={this.state.email}
+                    password={this.state.password}
+                    handleChange={this.handleChange}
+                    handleClickShowPassword={this.handleClickShowPassword}
+                    passwordVisibility={this.state.passwordVisibility}
+                  />
+                </Typography>
+              </div>
+            </Container>
+          );
+        }
+      }
+      ReactDOM.render(
+        <MuiThemeProvider theme={theme}>
+          {/* CssBaseline kickstart an elegant, consistent, and simple baseline to build upon. */}
+          <CssBaseline />
+          <App />
+        </MuiThemeProvider>,
+        document.querySelector("#root")
+      );
+    </script>
+    <script>
+      //function to get value from URL query parameter
+      function getQueryStringValue(key) {
+        let params = new URL(document.location).searchParams;
+        let name = params.get(key);
+        return name;
+      }
+      function ajaxCall(data, url, callback) {
+        var xhttp = new XMLHttpRequest();
+        xhttp.open("POST", url, true);
+        xhttp.onreadystatechange = function() {
+          if (this.readyState == 4) {
+            return callback(this.status, xhttp.response);
+          }
+        };
+        xhttp.setRequestHeader(
+          "Content-type",
+          "application/x-www-form-urlencoded"
+        );
+        xhttp.send(JSON.stringify(data));
+      }
+      window.sendResetFormData = function sendResetFormData(
+        name,
+        email,
+        password
+      ) {
+        let signupDetails = {
+          name: name,
+          email: email,
+          password: password
+        };
+        // Token URL will be [file_path/file_name.html?tk=213213]
+        let token = getQueryStringValue("tk");
+        ajaxCall(
+          { signupDetails, token },
+		// specify the route here (local or any REST end point)
+          "http://localhost:8000/password/reset",
+          function(status, response) {
+            //if (status == 200) {
+            if (status == 0) {
+              console.log("Response ---> ", response);
+              console.log("Status ---> ", status);
+              alert("Successfully Registered");
+            } else {
+              console.log("Response ---> ", response);
+              console.log("Status ---> ", status);
+              alert(
+                "Cannot register. There is some error from server. Please try later."
+              );
+            }
+          }
+        );
+      };
+    </script>
+  </body>
+</html>
