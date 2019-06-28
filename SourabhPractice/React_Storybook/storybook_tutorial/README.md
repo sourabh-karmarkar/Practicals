@@ -13,6 +13,8 @@
 
 - [Intro to Addons](https://storybook.js.org/docs/addons/introduction/)
 - [Addon Gallery](https://storybook.js.org/docs/addons/addon-gallery/)
+- [Adding Knobs](https://www.npmjs.com/package/@storybook/addon-knobs)
+  - Adding knobs is not in the youtube tutorial. This is added by following the npm documentation of adding knobs
 
 #### Reference github link
 
