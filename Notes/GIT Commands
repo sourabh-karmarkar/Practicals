@@ -64,3 +64,19 @@ add remote origin before pushing to remote repo
 ---> git remote add origin "git_link"
 
 --------------------------------------------------------------------------------------------------------------------------
+
+Getting git user info through command line
+
+---> Does not include headers
+curl https://api.github.com/users/{user_name}
+
+---> Includes headers
+curl -i https://api.github.com/users/{user_name}
+
+--------------------------------------------------------------------------------------------------------------------------
+
+Authenticating user and getting the info
+
+curl -i -u sourabh-karmarkar https://api.github.com/users/sourabh-karmarkar
+
+--------------------------------------------------------------------------------------------------------------------------
