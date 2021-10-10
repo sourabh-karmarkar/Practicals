@@ -1,0 +1,17 @@
+{
+  "name": "eckles-basic-responsive-grid",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.html",
+  "scripts": {
+    "start": "parcel $npm_config_folder/index.html --open",
+    "build": "parcel build $npm_config_folder/index.html"
+  },
+  "dependencies": {},
+  "devDependencies": {
+    "@babel/core": "7.2.0",
+    "parcel-bundler": "^1.6.1",
+    "sass": "^1.42.1"
+  },
+  "keywords": []
+}

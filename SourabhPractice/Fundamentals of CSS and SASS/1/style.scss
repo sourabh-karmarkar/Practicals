@@ -1,0 +1,18 @@
+$minWidth: 15rem;
+$gridGap: 2rem;
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax($minWidth, 1fr));
+  grid-gap: $gridGap;
+
+  & + .grid {
+    margin-top: $gridGap;
+  }
+}
+
+.grid-wrap {
+  padding: $gridGap;
+}
+
+@import "grid-item";

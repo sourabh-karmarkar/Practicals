@@ -1,0 +1,33 @@
+* {
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: "Baloo 2", sans-serif;
+  }
+  
+  span {
+    border: 2px dashed currentcolor;
+    border-radius: 4px;
+    min-height: 15vh;
+    padding: 1rem;
+    color: #0178d4;
+    font-size: 3rem;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  div:nth-child(2) span {
+    color: purple;
+  }
+  
+  div:nth-child(3) span {
+    color: green;
+  }
+  
+  div:nth-child(4) span {
+    color: orangered;
+  }
+  
