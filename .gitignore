@@ -7,6 +7,8 @@ yarn.lock
 **/__pycache__/**/*
 **/data/**/*
 **/venv/**/*
+**/dist/**/*
+**/.cache/**/*
 
 # Ignoring eclipse project related files and folders
 **/.classpath
