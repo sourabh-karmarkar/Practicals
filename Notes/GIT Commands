@@ -17,7 +17,15 @@ git checkout "branch name" - switch to the created branch
 merging ---> first go to source branch then commit changes
 		then come to master branch and (git merge "name of the source branch")
 
+--------------------------------------------------------------------------------------------------------------------------
+
+Delete a single branch
+
 git branch -d "branch_name to delete" --> delete a branch (cannot delete branch which you are currently working on)
+
+Delete multiple git branches
+
+git branch | grep "<pattern>" | xargs git branch -D
 
 --------------------------------------------------------------------------------------------------------------------------
 
