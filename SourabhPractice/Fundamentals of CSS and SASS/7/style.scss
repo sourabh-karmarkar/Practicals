@@ -1,0 +1,29 @@
+img {
+  filter: grayscale(40%) blur(2px);
+  transition: 180ms filter;
+}
+
+span {
+  position: relative;
+}
+
+span::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  box-shadow: inset 0 0 5rem rgba(7, 16, 48, 0.8);
+  transition: 180ms box-shadow;
+}
+
+span:hover img {
+  filter: none;
+}
+
+span:hover::after {
+  box-shadow: inset 0 0 0 rgba(7, 16, 48, 0.8);
+}
+
+@import "rest";
