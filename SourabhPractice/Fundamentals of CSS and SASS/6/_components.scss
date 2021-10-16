@@ -1,0 +1,47 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Baloo 2", sans-serif;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 1rem;
+}
+
+body > * {
+  width: 25rem;
+  max-width: 100%;
+}
+
+p {
+  margin: 0 0 1.5rem;
+}
+
+h1 {
+  color: theme-color(primary);
+}
+
+a {
+  background-color: theme-color(support);
+  color: #fff;
+  border-radius: 8px;
+  text-decoration: none;
+  padding: 0.25em 0.75em;
+
+  &:hover {
+    background-color: scale-color(theme-color(support), $lightness: -30%);
+  }
+}
+
+.card {
+  border: 3px solid theme-color(secondary);
+  border-radius: 8px;
+  padding: 1.5rem;
+  margin-top: 2rem;
+}
+
+hr {
+  border: 2px solid theme-color(support);
+}
