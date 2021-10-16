@@ -1,0 +1,38 @@
+/* Demo layout styles */
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  background-color: #eee;
+  min-height: 100vh;
+  display: grid;
+  grid-template-areas:
+    "header header"
+    "nav main";
+  grid-template-columns: minmax(10ch, 20ch) minmax(30ch, 1fr);
+  grid-template-rows: auto 1fr;
+}
+
+article {
+  /* For visibility */
+  background-color: #575fcf;
+  max-width: 80ch;
+  height: 40vh;
+}
+
+header {
+  grid-area: header;
+  background-color: #0fbcf9;
+  height: 2rem;
+}
+
+nav {
+  grid-area: nav;
+  background-color: #0f9d58;
+}
+
+main {
+  grid-area: main;
+}

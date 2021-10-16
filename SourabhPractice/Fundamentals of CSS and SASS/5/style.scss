@@ -1,0 +1,23 @@
+:root {
+  --unit: 0.5rem;
+}
+
+article {
+  /* margin: calc(2 * var(--unit)); */
+
+  margin:
+    /* min, preferred, max */
+    clamp(
+      calc(2 * var(--unit)),
+      5vh,
+      calc(5 * var(--unit))
+    )
+
+    clamp(
+      calc(4 * var(--unit)),
+      5vw,
+      calc(8 * var(--unit))
+    )
+}
+
+@import "rest";
