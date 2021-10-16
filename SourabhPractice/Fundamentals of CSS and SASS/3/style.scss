@@ -1,0 +1,38 @@
+// Comment/uncomment to try out each effect
+
+.card {
+  // Required box-shadow props
+  // offset-x offset-y color
+  box-shadow: 5px 8px black;
+
+  // box-shadow blur
+  // offset-x offset-y blur-radius color
+  box-shadow: 5px 8px 10px black;
+
+  // offset-x offset-y blur-radius spread-radius color
+  box-shadow: 5px 8px 10px 5px black;
+
+  // inset offset-x offset-y blur-radius spread-radius color
+  box-shadow: inset 3px 3px 5px 2px black;
+
+  // Negative values for offset
+  box-shadow: -5px -5px 10px black;
+
+  // Negative values for spread-radius
+  box-shadow: 8px 8px 8px -6px black;
+
+  // blur-radius only for equal shadow
+  box-shadow: 0 0 20px black;
+
+  // Pseudo-border with spread-radius only
+  box-shadow: 0 0 0 5px black;
+
+  // Multiple shadows
+  box-shadow: 
+    // pseudo-border
+    0 0 0 3px #79009e, 
+    // y-offset shadow with negative spread-radius
+    0 10px 20px -5px #79009e;
+}
+
+@import "base";
