@@ -6,27 +6,28 @@ $var js: static/js/jquery-3.3.1.min.js static/js/bootstrap.min.js static/js/mate
 <head>
     <meta charset="UTF-8">
     <title>CodeWizard</title>
-
     $if self.css:
         $for style in self.css.split():
             <link rel="stylesheet" href="$style">
 </head>
 <body>
     <div id="app">
-        <div class="navbar navbar-info navbar-fixed-top">
-            <div class="navbar-header">
+        <div style="justify-content:flex-start;" class="navbar navbar-info navbar-fixed-top">
+            <div style="width:12%;" class="navbar-header">
                 <a class="navbar-brand">CodeWizard</a>
             </div>
-
-            <ul class="nav navbar-nav">
-                <li><a class="waves-effect" href="/">Home Feed<div class="ripple-container"></div></a></li>
-                <li><a href="/discover">Discover<div class="ripple-container"></div></a></li>
-                <li><a href="/profile">Profile<div class="ripple-container"></div></a></li>
-                <li><a href="/settings">Settings<div class="ripple-container"></div></a></li>
+            <ul style="width:30%;flex-direction:row;" class="nav navbar-nav">
+                <li style="width:25%;"><a class="waves-effect" href="/">Home Feed<div class="ripple-container"></div></a></li>
+                <li style="width:25%;"><a href="/discover">Discover<div class="ripple-container"></div></a></li>
+                <li style="width:25%;"><a href="/profile">Profile<div class="ripple-container"></div></a></li>
+                <li style="width:25%;"><a href="/settings">Settings<div class="ripple-container"></div></a></li>
             </ul>
-
             <div class="pull-right">
-                <a href="/register" class="btn btn-raised btn-default waves-effect">Register</a>&nbsp;&nbsp;
+                $if session['user'] == None:
+                    <a href="/login" class="btn btn-link waves-effect">Login</a>&nbsp;&nbsp;
+                    <a href="/register" class="btn btn-raised btn-default waves-effect">Register</a>&nbsp;&nbsp;
+                $else:
+                    <a id="logout-link" class="btn btn-raised btn-default waves-effect">Logout</a>&nbsp;&nbsp;
             </div>
         </div>
         <br/><br/><br/>
@@ -35,6 +36,5 @@ $var js: static/js/jquery-3.3.1.min.js static/js/bootstrap.min.js static/js/mate
     $if self.js:
         $for script in self.js.split():
             <script src="$script"></script>
-
 </body>
 </html>

@@ -10,3 +10,9 @@ https://fezvrasta.github.io/bootstrap-material-design/
 
 web.py
 http://webpy.org/
+
+---->
+
+To run the server enter the following command (You should have mongo instance running)
+
+- python3 Controller.py

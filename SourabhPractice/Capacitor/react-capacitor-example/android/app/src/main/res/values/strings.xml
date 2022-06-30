@@ -1,0 +1,7 @@
+<?xml version='1.0' encoding='utf-8'?>
+<resources>
+    <string name="app_name">react-capacitor-example</string>
+    <string name="title_activity_main">react-capacitor-example</string>
+    <string name="package_name">com.example.reactCapacitor</string>
+    <string name="custom_url_scheme">com.example.reactCapacitor</string>
+</resources>
