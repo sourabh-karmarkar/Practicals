@@ -1,0 +1,3 @@
+[submodule "gatsby_crash_course"]
+	path = gatsby_crash_course
+	url = git@github.com:sourabh-karmarkar/gatsby_crash_course.git
